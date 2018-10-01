@@ -1,11 +1,11 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V1\Remarketing;
+namespace Koma136\MyTarget\Operator\V1\Remarketing;
 
-use Dsl\MyTarget\Client;
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Domain\V1\Remarketing\RemarketingContextPhrases;
-use Dsl\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Client;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Domain\V1\Remarketing\RemarketingContextPhrases;
+use Koma136\MyTarget\Mapper\Mapper;
 use Psr\Http\Message\StreamInterface;
 
 class RemarketingCtxPhrasesOperator
@@ -40,7 +40,7 @@ class RemarketingCtxPhrasesOperator
     public function create($file, $name, Context $context = null)
     {
         $context = Context::withLimitBy($context, self::LIMIT_CREATE);
-        $file = \Dsl\MyTarget\streamOrResource($file);
+        $file = \Koma136\MyTarget\streamOrResource($file);
 
         $body = [
             ["name" => "name", "contents" => $name],

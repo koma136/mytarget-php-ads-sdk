@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Image;
+namespace Koma136\MyTarget\Domain\V1\Image;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class UploadImage
 {

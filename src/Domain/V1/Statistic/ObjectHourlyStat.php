@@ -1,20 +1,20 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Statistic;
+namespace Koma136\MyTarget\Domain\V1\Statistic;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class ObjectHourlyStat extends ObjectStat
 {
     /**
      * @var HourStat[]
-     * @Field(name="detailed_stat", type="array<Dsl\MyTarget\Domain\V1\Statistic\HourStat>")
+     * @Field(name="detailed_stat", type="array<Koma136\MyTarget\Domain\V1\Statistic\HourStat>")
      */
     private $detailed;
 
     /**
      * @var HourStat
-     * @Field(type="Dsl\MyTarget\Domain\V1\Statistic\HourStat")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Statistic\HourStat")
      */
     private $total;
 

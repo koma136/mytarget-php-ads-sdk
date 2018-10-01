@@ -1,15 +1,15 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V2;
+namespace Koma136\MyTarget\Operator\V2;
 
-use Dsl\MyTarget\Client;
-use Dsl\MyTarget\Domain\V2\Enum\CreativeType;
-use Dsl\MyTarget\Mapper\Mapper;
-use Dsl\MyTarget\Domain\V2\Creative;
-use Dsl\MyTarget\Domain\V2\UploadCreative;
+use Koma136\MyTarget\Client;
+use Koma136\MyTarget\Domain\V2\Enum\CreativeType;
+use Koma136\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Domain\V2\Creative;
+use Koma136\MyTarget\Domain\V2\UploadCreative;
 use Psr\Http\Message\StreamInterface;
-use Dsl\MyTarget as f;
-use Dsl\MyTarget\Context;
+use Koma136\MyTarget as f;
+use Koma136\MyTarget\Context;
 
 class CreativeOperator
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Token\Exception;
+namespace Koma136\MyTarget\Token\Exception;
 
-use Dsl\MyTarget\Transport\Exception\RequestException;
+use Koma136\MyTarget\Transport\Exception\RequestException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 

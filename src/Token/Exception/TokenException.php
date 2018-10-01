@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Token\Exception;
+namespace Koma136\MyTarget\Token\Exception;
 
-use Dsl\MyTarget\Exception\ApiException;
+use Koma136\MyTarget\Exception\ApiException;
 
 interface TokenException extends ApiException
 {

@@ -1,12 +1,12 @@
 <?php
 
-namespace Dsl\MyTarget\Transport;
+namespace Koma136\MyTarget\Transport;
 
-use Dsl\MyTarget\Context;
+use Koma136\MyTarget\Context;
 use GuzzleHttp\ClientInterface;
 use Psr\Http\Message\RequestInterface;
 use GuzzleHttp\Exception as guzzleEx;
-use Dsl\MyTarget\Transport\Exception as mtEx;
+use Koma136\MyTarget\Transport\Exception as mtEx;
 
 /**
  * An implementation of HttpTransport that uses Guzzle and depends on "guzzlehttp/guzzle" composer package

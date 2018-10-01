@@ -1,14 +1,14 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Campaign;
+namespace Koma136\MyTarget\Domain\V1\Campaign;
 
-use Dsl\MyTarget\Domain\V1\Banner\Banner;
-use Dsl\MyTarget\Domain\V1\Targeting\CampaignTargeting;
-use Dsl\MyTarget\Domain\V1\Enum\Mixing;
-use Dsl\MyTarget\Domain\V1\Enum\Status;
-use Dsl\MyTarget\Domain\V1\Remarketing\RemarketingPricelist;
-use Dsl\MyTarget\Mapper\Annotation\Field;
-use Dsl\MyTarget as f;
+use Koma136\MyTarget\Domain\V1\Banner\Banner;
+use Koma136\MyTarget\Domain\V1\Targeting\CampaignTargeting;
+use Koma136\MyTarget\Domain\V1\Enum\Mixing;
+use Koma136\MyTarget\Domain\V1\Enum\Status;
+use Koma136\MyTarget\Domain\V1\Remarketing\RemarketingPricelist;
+use Koma136\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget as f;
 
 class Campaign
 {
@@ -26,13 +26,13 @@ class Campaign
 
     /**
      * @var Status
-     * @Field(type="Dsl\MyTarget\Domain\V1\Enum\Status")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Enum\Status")
      */
     private $status;
 
     /**
      * @var Status
-     * @Field(name="system_status", type="Dsl\MyTarget\Domain\V1\Enum\Status")
+     * @Field(name="system_status", type="Koma136\MyTarget\Domain\V1\Enum\Status")
      */
     private $systemStatus;
 
@@ -62,7 +62,7 @@ class Campaign
 
     /**
      * @var Package
-     * @Field(type="Dsl\MyTarget\Domain\V1\Campaign\Package")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Campaign\Package")
      */
     private $package;
 
@@ -103,13 +103,13 @@ class Campaign
 
     /**
      * @var Mixing
-     * @Field(name="mixing", type="Dsl\MyTarget\Domain\V1\Enum\Mixing")
+     * @Field(name="mixing", type="Koma136\MyTarget\Domain\V1\Enum\Mixing")
      */
     private $mixing;
 
     /**
      * @var CampaignTargeting
-     * @Field(name="targetings", type="Dsl\MyTarget\Domain\V1\Targeting\CampaignTargeting")
+     * @Field(name="targetings", type="Koma136\MyTarget\Domain\V1\Targeting\CampaignTargeting")
      */
     private $targetings;
 
@@ -145,7 +145,7 @@ class Campaign
 
     /**
      * @var string
-     * @Field(name="autobidding_mode", type="Dsl\MyTarget\Domain\V1\Enum\AutobiddingMode")
+     * @Field(name="autobidding_mode", type="Koma136\MyTarget\Domain\V1\Enum\AutobiddingMode")
      */
     private $autoBiddingMode;
 
@@ -157,13 +157,13 @@ class Campaign
 
     /**
      * @var RemarketingPricelist
-     * @Field(name="price_list", type="Dsl\MyTarget\Domain\V1\Remarketing\RemarketingPricelist")
+     * @Field(name="price_list", type="Koma136\MyTarget\Domain\V1\Remarketing\RemarketingPricelist")
      */
     private $pricelist;
 
     /**
      * @var Banner[]
-     * @Field(name="banners", type="array<Dsl\MyTarget\Domain\V1\Banner\Banner>")
+     * @Field(name="banners", type="array<Koma136\MyTarget\Domain\V1\Banner\Banner>")
      */
     private $banners;
 

@@ -1,13 +1,13 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Limiting;
+namespace tests\Koma136\MyTarget\Limiting;
 
-use Dsl\MyTarget\Context;
+use Koma136\MyTarget\Context;
 use GuzzleHttp\Psr7\Request;
-use Dsl\MyTarget\Limiting\LimitingMiddleware;
-use Dsl\MyTarget\Limiting\RateLimitProvider;
-use Dsl\MyTarget\Limiting\Exception\ThrottleException;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddlewareStack;
+use Koma136\MyTarget\Limiting\LimitingMiddleware;
+use Koma136\MyTarget\Limiting\RateLimitProvider;
+use Koma136\MyTarget\Limiting\Exception\ThrottleException;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddlewareStack;
 use Psr\Http\Message\ResponseInterface;
 
 class LimitingMiddlewareTest extends \PHPUnit_Framework_TestCase

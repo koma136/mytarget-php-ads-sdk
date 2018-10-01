@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Remarketing;
+namespace Koma136\MyTarget\Domain\V1\Remarketing;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 /**
  * Called `Targetings` in MyTarget documentation
@@ -11,61 +11,61 @@ class RemarketingItem
 {
     /**
      * @var RemarketingCounterInterval[]
-     * @Field(name="remarketing_counters", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingCounterInterval>")
+     * @Field(name="remarketing_counters", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingCounterInterval>")
      */
     private $counters;
 
     /**
      * @var RemarketingGameInterval[]
-     * @Field(name="remarketing_game_payers", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingGameInterval>")
+     * @Field(name="remarketing_game_payers", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingGameInterval>")
      */
     private $gamePayers;
 
     /**
      * @var RemarketingGameInterval[]
-     * @Field(name="remarketing_game_players", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingGameInterval>")
+     * @Field(name="remarketing_game_players", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingGameInterval>")
      */
     private $gamePlayers;
 
     /**
      * @var RemarketingInterval[]
-     * @Field(name="remarketing_payers", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingInterval>")
+     * @Field(name="remarketing_payers", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingInterval>")
      */
     private $payers;
 
     /**
      * @var RemarketingInterval[]
-     * @Field(name="remarketing_players", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingInterval>")
+     * @Field(name="remarketing_players", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingInterval>")
      */
     private $players;
 
     /**
      * @var RemarketingGroupMembership[]
-     * @Field(name="remarketing_groups", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingGroupMembership>")
+     * @Field(name="remarketing_groups", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingGroupMembership>")
      */
     private $groups;
 
     /**
      * @var RemarketingItemUserList[]
-     * @Field(name="remarketing_users_lists", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingItemUserList>")
+     * @Field(name="remarketing_users_lists", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingItemUserList>")
      */
     private $usersLists;
 
     /**
      * @var RemarketingContextPhrasesInterval[]
-     * @Field(name="remarketing_context_phrases", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingContextPhrasesInterval>")
+     * @Field(name="remarketing_context_phrases", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingContextPhrasesInterval>")
      */
     private $contextPhrases;
 
     /**
      * @var RemarketingPricelistInterval[]
-     * @Field(name="remarketing_pricelists", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingPricelistInterval>")
+     * @Field(name="remarketing_pricelists", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingPricelistInterval>")
      */
     private $pricelists;
 
     /**
      * @var RemarketingMobileApps[]
-     * @Field(name="remarketing_mobile_apps", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingMobileApps>")
+     * @Field(name="remarketing_mobile_apps", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingMobileApps>")
      */
     private $mobileApps;
 
@@ -77,13 +77,13 @@ class RemarketingItem
 
     /**
      * @var RemarketingVkGroup[]
-     * @Field(name="remarketing_vk_groups", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingVkGroup>")
+     * @Field(name="remarketing_vk_groups", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingVkGroup>")
      */
     private $vkGroups;
 
     /**
      * @var RemarketingVkApp[]
-     * @Field(name="remarketing_vk_apps", type="array<Dsl\MyTarget\Domain\V1\Remarketing\RemarketingVkApp>")
+     * @Field(name="remarketing_vk_apps", type="array<Koma136\MyTarget\Domain\V1\Remarketing\RemarketingVkApp>")
      */
     private $vkApps;
 

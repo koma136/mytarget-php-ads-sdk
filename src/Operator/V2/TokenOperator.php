@@ -1,12 +1,12 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V2;
+namespace Koma136\MyTarget\Operator\V2;
 
-use Dsl\MyTarget\Client;
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Domain\V2\Token;
-use Dsl\MyTarget\Mapper\Mapper;
-use Dsl\MyTarget\Token\ClientCredentials\Credentials;
+use Koma136\MyTarget\Client;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Domain\V2\Token;
+use Koma136\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Token\ClientCredentials\Credentials;
 
 class TokenOperator
 {
@@ -43,15 +43,14 @@ class TokenOperator
         $username = $context->hasUsername() ? $context->getUsername() : null;
 
         $payload = [
-            'grant_type'    => $username ? self::GRANT_TYPE_CLIENT : self::GRANT_TYPE_AGENCY,
-            'client_id'     => $credentials->getClientId(),
-            'client_secret' => $credentials->getClientSecret()
+            ["name" => "grant_type", "contents" => $username ? self::GRANT_TYPE_CLIENT : self::GRANT_TYPE_AGENCY],
+            ["name" => "client_id", "contents" => $credentials->getClientId()],
+            ["name" => "client_secret", "contents" => $credentials->getClientSecret()]
         ];
 
         if ($username) {
-            $payload['agency_client_name'] = $username;
+            $payload[] = ["name" =>'agency_client_name',"contents" => $username];
         }
-
         $json = $this->client->postMultipart(self::TOKEN_URL, $payload, null, $context);
 
         return $this->mapper->hydrateNew(Token::class, $json);

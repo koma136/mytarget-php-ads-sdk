@@ -1,12 +1,12 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Transport\Middleware;
+namespace tests\Koma136\MyTarget\Transport\Middleware;
 
-use Dsl\MyTarget\Context;
+use Koma136\MyTarget\Context;
 use GuzzleHttp\Psr7\Response;
-use Dsl\MyTarget\Transport\HttpTransport;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddleware;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddlewareStack;
+use Koma136\MyTarget\Transport\HttpTransport;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddleware;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddlewareStack;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 

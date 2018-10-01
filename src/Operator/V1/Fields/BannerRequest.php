@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V1\Fields;
+namespace Koma136\MyTarget\Operator\V1\Fields;
 
-use Dsl\MyTarget\Domain\V1\Enum\Status;
-use Dsl\MyTarget as f;
+use Koma136\MyTarget\Domain\V1\Enum\Status;
+use Koma136\MyTarget as f;
 
 class BannerRequest
 {

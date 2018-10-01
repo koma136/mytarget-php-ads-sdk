@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Limiting;
+namespace Koma136\MyTarget\Limiting;
 
-use Dsl\MyTarget as f;
+use Koma136\MyTarget as f;
 
 class Limits
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V2;
+namespace Koma136\MyTarget\Domain\V2;
 
-use Dsl\MyTarget\Domain\V2\Enum\CreativeType;
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V2\Enum\CreativeType;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class Creative
 {
@@ -15,13 +15,13 @@ class Creative
 
     /**
      * @var CreativeVariant[]
-     * @Field(type="dict<Dsl\MyTarget\Domain\V2\CreativeVariant>")
+     * @Field(type="dict<Koma136\MyTarget\Domain\V2\CreativeVariant>")
      */
     private $variants;
 
     /**
      * @var CreativeType
-     * @Field(type="Dsl\MyTarget\Domain\V2\Enum\CreativeType")
+     * @Field(type="Koma136\MyTarget\Domain\V2\Enum\CreativeType")
      */
     private $type;
 

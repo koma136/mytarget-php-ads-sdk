@@ -1,13 +1,13 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V1;
+namespace Koma136\MyTarget\Operator\V1;
 
-use Dsl\MyTarget\Client;
-use Dsl\MyTarget\Domain\V1\Image\Image;
-use Dsl\MyTarget\Domain\V1\Image\UploadImage;
-use Dsl\MyTarget\Mapper\Mapper;
-use Dsl\MyTarget as f;
-use Dsl\MyTarget\Context;
+use Koma136\MyTarget\Client;
+use Koma136\MyTarget\Domain\V1\Image\Image;
+use Koma136\MyTarget\Domain\V1\Image\UploadImage;
+use Koma136\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget as f;
+use Koma136\MyTarget\Context;
 use Psr\Http\Message\StreamInterface;
 
 class ImageOperator

@@ -1,15 +1,15 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Banner;
+namespace Koma136\MyTarget\Domain\V1\Banner;
 
-use Dsl\MyTarget\Domain\V1\Campaign\Campaign;
-use Dsl\MyTarget\Domain\V1\Image\Image;
-use Dsl\MyTarget\Domain\V2\Creative;
-use Dsl\MyTarget\Domain\V1\User;
-use Dsl\MyTarget\Mapper\Annotation\Field;
-use Dsl\MyTarget\Domain\V1\Enum\Status;
-use Dsl\MyTarget\Domain\V1\Enum\ModerationStatus;
-use Dsl\MyTarget as f;
+use Koma136\MyTarget\Domain\V1\Campaign\Campaign;
+use Koma136\MyTarget\Domain\V1\Image\Image;
+use Koma136\MyTarget\Domain\V2\Creative;
+use Koma136\MyTarget\Domain\V1\User;
+use Koma136\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\Enum\Status;
+use Koma136\MyTarget\Domain\V1\Enum\ModerationStatus;
+use Koma136\MyTarget as f;
 
 class Banner
 {
@@ -21,13 +21,13 @@ class Banner
 
     /**
      * @var Status
-     * @Field(name="status", type="Dsl\MyTarget\Domain\V1\Enum\Status")
+     * @Field(name="status", type="Koma136\MyTarget\Domain\V1\Enum\Status")
      */
     private $status;
 
     /**
      * @var Status
-     * @Field(name="system_status", type="Dsl\MyTarget\Domain\V1\Enum\Status")
+     * @Field(name="system_status", type="Koma136\MyTarget\Domain\V1\Enum\Status")
      */
     private $systemStatus;
 
@@ -45,7 +45,7 @@ class Banner
 
     /**
      * @var ModerationStatus
-     * @Field(name="moderation_status", type="Dsl\MyTarget\Domain\V1\Enum\ModerationStatus")
+     * @Field(name="moderation_status", type="Koma136\MyTarget\Domain\V1\Enum\ModerationStatus")
      */
     private $moderationStatus;
 
@@ -105,13 +105,13 @@ class Banner
 
     /**
      * @var User
-     * @Field(name="user", type="Dsl\MyTarget\Domain\V1\User")
+     * @Field(name="user", type="Koma136\MyTarget\Domain\V1\User")
      */
     private $user;
 
     /**
      * @var Campaign
-     * @Field(name="campaign", type="Dsl\MyTarget\Domain\V1\Campaign\Campaign")
+     * @Field(name="campaign", type="Koma136\MyTarget\Domain\V1\Campaign\Campaign")
      */
     private $campaign;
 
@@ -135,7 +135,7 @@ class Banner
 
     /**
      * @var BannerModeration
-     * @Field(name="banner_moderation", type="Dsl\MyTarget\Domain\V1\Banner\BannerModeration")
+     * @Field(name="banner_moderation", type="Koma136\MyTarget\Domain\V1\Banner\BannerModeration")
      */
     private $bannerModeration;
 
@@ -147,13 +147,13 @@ class Banner
 
     /**
      * @var Image
-     * @Field(name="image", type="Dsl\MyTarget\Domain\V1\Image\Image")
+     * @Field(name="image", type="Koma136\MyTarget\Domain\V1\Image\Image")
      */
     private $image;
 
     /**
      * @var Creative[]
-     * @Field(type="dict<Dsl\MyTarget\Domain\V2\Creative>")
+     * @Field(type="dict<Koma136\MyTarget\Domain\V2\Creative>")
      */
     private $content;
 
@@ -165,37 +165,37 @@ class Banner
 
     /**
      * @var Image
-     * @Field(name="promo_image", type="Dsl\MyTarget\Domain\V1\Image\Image")
+     * @Field(name="promo_image", type="Koma136\MyTarget\Domain\V1\Image\Image")
      */
     private $promoImage;
 
     /**
      * @var Image
-     * @Field(name="vk_feed", type="Dsl\MyTarget\Domain\V1\Image\Image")
+     * @Field(name="vk_feed", type="Koma136\MyTarget\Domain\V1\Image\Image")
      */
     private $vkFeed;
 
     /**
      * @var Image
-     * @Field(name="background_image", type="Dsl\MyTarget\Domain\V1\Image\Image")
+     * @Field(name="background_image", type="Koma136\MyTarget\Domain\V1\Image\Image")
      */
     private $backgroundImage;
 
     /**
      * @var Html
-     * @Field(name="html5", type="Dsl\MyTarget\Domain\V1\Banner\Html")
+     * @Field(name="html5", type="Koma136\MyTarget\Domain\V1\Banner\Html")
      */
     private $html5;
 
     /**
      * @var VideoParams
-     * @Field(name="video_params", type="Dsl\MyTarget\Domain\V1\Banner\VideoParams")
+     * @Field(name="video_params", type="Koma136\MyTarget\Domain\V1\Banner\VideoParams")
      */
     private $videoParams;
 
     /**
      * @var Products
-     * @Field(name="products", type="Dsl\MyTarget\Domain\V1\Banner\Products")
+     * @Field(name="products", type="Koma136\MyTarget\Domain\V1\Banner\Products")
      */
     private $products;
 

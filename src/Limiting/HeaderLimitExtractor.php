@@ -1,6 +1,6 @@
 <?php
 
-namespace Dsl\MyTarget\Limiting;
+namespace Koma136\MyTarget\Limiting;
 
 use Psr\Http\Message\ResponseInterface;
 

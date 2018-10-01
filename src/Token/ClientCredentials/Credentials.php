@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Token\ClientCredentials;
+namespace Koma136\MyTarget\Token\ClientCredentials;
 
-use Dsl\MyTarget\Context;
+use Koma136\MyTarget\Context;
 use Psr\Http\Message\RequestInterface;
 
 class Credentials implements CredentialsProvider

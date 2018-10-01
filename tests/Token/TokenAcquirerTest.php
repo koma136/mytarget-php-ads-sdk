@@ -1,16 +1,16 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Token;
+namespace tests\Koma136\MyTarget\Token;
 
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Token\Token;
-use Dsl\MyTarget\Token\TokenAcquirer;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Token\Token;
+use Koma136\MyTarget\Token\TokenAcquirer;
 use GuzzleHttp\Psr7\Uri;
-use Dsl\MyTarget\Token\ClientCredentials\Credentials;
-use Dsl\MyTarget\Token\Exception\TokenDeletedException;
-use Dsl\MyTarget\Token\Exception\TokenLimitReachedException;
-use Dsl\MyTarget\Token\Exception\TokenRequestException;
-use Dsl\MyTarget\Transport\HttpTransport;
+use Koma136\MyTarget\Token\ClientCredentials\Credentials;
+use Koma136\MyTarget\Token\Exception\TokenDeletedException;
+use Koma136\MyTarget\Token\Exception\TokenLimitReachedException;
+use Koma136\MyTarget\Token\Exception\TokenRequestException;
+use Koma136\MyTarget\Transport\HttpTransport;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 use Psr\Http\Message\UriInterface;

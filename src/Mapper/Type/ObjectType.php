@@ -1,15 +1,15 @@
 <?php
 
-namespace Dsl\MyTarget\Mapper\Type;
+namespace Koma136\MyTarget\Mapper\Type;
 
 use Doctrine\Common\Annotations\Reader;
 use Doctrine\Instantiator\Instantiator;
 use Doctrine\Instantiator\InstantiatorInterface;
-use Dsl\MyTarget\Mapper\Annotation\Field;
-use Dsl\MyTarget\Mapper\Exception\ContextAwareException;
-use Dsl\MyTarget\Mapper\Exception\ContextUnawareException;
-use Dsl\MyTarget\Mapper\Mapper;
-use Dsl\MyTarget\Mapper\Exception\ClassNotFoundException;
+use Koma136\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Mapper\Exception\ContextAwareException;
+use Koma136\MyTarget\Mapper\Exception\ContextUnawareException;
+use Koma136\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Mapper\Exception\ClassNotFoundException;
 
 class ObjectType implements Type
 {

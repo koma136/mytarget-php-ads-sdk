@@ -1,11 +1,11 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V1;
+namespace Koma136\MyTarget\Operator\V1;
 
-use Dsl\MyTarget\Client;
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Domain\V1\Transaction;
-use Dsl\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Client;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Domain\V1\Transaction;
+use Koma136\MyTarget\Mapper\Mapper;
 
 class TransactionOperator
 {

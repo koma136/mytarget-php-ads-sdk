@@ -1,13 +1,13 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Campaign;
+namespace Koma136\MyTarget\Domain\V1\Campaign;
 
-use Dsl\MyTarget\Domain\V1\Enum\AutobiddingMode;
-use Dsl\MyTarget\Domain\V1\Enum\Mixing;
-use Dsl\MyTarget\Domain\V1\Enum\Status;
-use Dsl\MyTarget\Domain\V1\Targeting\CampaignTargeting;
-use Dsl\MyTarget\Mapper\Annotation\Field;
-use Dsl\MyTarget as f;
+use Koma136\MyTarget\Domain\V1\Enum\AutobiddingMode;
+use Koma136\MyTarget\Domain\V1\Enum\Mixing;
+use Koma136\MyTarget\Domain\V1\Enum\Status;
+use Koma136\MyTarget\Domain\V1\Targeting\CampaignTargeting;
+use Koma136\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget as f;
 
 class MutateCampaign
 {
@@ -19,7 +19,7 @@ class MutateCampaign
 
     /**
      * @var Status
-     * @Field(type="Dsl\MyTarget\Domain\V1\Enum\Status")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Enum\Status")
      */
     private $status;
 
@@ -37,7 +37,7 @@ class MutateCampaign
 
     /**
      * @var PackageId
-     * @Field(type="Dsl\MyTarget\Domain\V1\Campaign\PackageId")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Campaign\PackageId")
      */
     private $package;
 
@@ -79,19 +79,19 @@ class MutateCampaign
 
     /**
      * @var Mixing
-     * @Field(name="mixing", type="Dsl\MyTarget\Domain\V1\Enum\Mixing")
+     * @Field(name="mixing", type="Koma136\MyTarget\Domain\V1\Enum\Mixing")
      */
     private $mixing;
 
     /**
      * @var CampaignTargeting
-     * @Field(name="targetings", type="Dsl\MyTarget\Domain\V1\Targeting\CampaignTargeting")
+     * @Field(name="targetings", type="Koma136\MyTarget\Domain\V1\Targeting\CampaignTargeting")
      */
     private $targetings;
 
     /**
      * @var AutobiddingMode
-     * @Field(name="autobidding_mode", type="Dsl\MyTarget\Domain\V1\Enum\AutobiddingMode")
+     * @Field(name="autobidding_mode", type="Koma136\MyTarget\Domain\V1\Enum\AutobiddingMode")
      */
     private $autoBiddingMode;
 
@@ -103,7 +103,7 @@ class MutateCampaign
 
     /**
      * @var RemarketingPricelistId
-     * @Field(name="price_list", type="Dsl\MyTarget\Domain\V1\Campaign\RemarketingPricelistId")
+     * @Field(name="price_list", type="Koma136\MyTarget\Domain\V1\Campaign\RemarketingPricelistId")
      */
     private $pricelist;
 

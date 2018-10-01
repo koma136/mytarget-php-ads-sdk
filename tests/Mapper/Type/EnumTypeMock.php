@@ -1,8 +1,8 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Mapper\Type;
+namespace tests\Koma136\MyTarget\Mapper\Type;
 
-use Dsl\MyTarget\Domain\AbstractEnum;
+use Koma136\MyTarget\Domain\AbstractEnum;
 
 class EnumTypeMock extends AbstractEnum
 {

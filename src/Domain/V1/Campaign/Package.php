@@ -1,10 +1,10 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Campaign;
+namespace Koma136\MyTarget\Domain\V1\Campaign;
 
-use Dsl\MyTarget\Domain\V1\Targeting\CampaignTargeting;
-use Dsl\MyTarget\Mapper\Annotation\Field;
-use Dsl\MyTarget\Domain\V1\Enum\Status;
+use Koma136\MyTarget\Domain\V1\Targeting\CampaignTargeting;
+use Koma136\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\Enum\Status;
 
 class Package
 {
@@ -22,13 +22,13 @@ class Package
 
     /**
      * @var Status
-     * @Field(name="status", type="Dsl\MyTarget\Domain\V1\Enum\Status")
+     * @Field(name="status", type="Koma136\MyTarget\Domain\V1\Enum\Status")
      */
     private $status;
 
     /**
      * @var Status
-     * @Field(name="system_status", type="Dsl\MyTarget\Domain\V1\Enum\Status")
+     * @Field(name="system_status", type="Koma136\MyTarget\Domain\V1\Enum\Status")
      */
     private $systemStatus;
 
@@ -70,7 +70,7 @@ class Package
 
     /**
      * @var CampaignTargeting
-     * @Field(name="targetings", type="Dsl\MyTarget\Domain\V1\Targeting\CampaignTargeting")
+     * @Field(name="targetings", type="Koma136\MyTarget\Domain\V1\Targeting\CampaignTargeting")
      */
     private $targetings;
 

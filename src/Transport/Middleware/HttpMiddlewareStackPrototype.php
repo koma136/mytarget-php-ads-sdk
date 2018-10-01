@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Transport\Middleware;
+namespace Koma136\MyTarget\Transport\Middleware;
 
-use Dsl\MyTarget\Transport\HttpTransport;
+use Koma136\MyTarget\Transport\HttpTransport;
 
 class HttpMiddlewareStackPrototype extends HttpMiddlewareStack
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Dsl\MyTarget\Token;
+namespace Koma136\MyTarget\Token;
 
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Token\Exception\TokenLimitReachedException;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddleware;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddlewareStack;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Token\Exception\TokenLimitReachedException;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddleware;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddlewareStack;
 use Psr\Http\Message\RequestInterface;
-use Dsl\MyTarget\Token\Exception\TokenLockException;
-use Dsl\MyTarget\Token\Exception\TokenRequestException;
+use Koma136\MyTarget\Token\Exception\TokenLockException;
+use Koma136\MyTarget\Token\Exception\TokenRequestException;
 
 class TokenGrantMiddleware implements HttpMiddleware
 {

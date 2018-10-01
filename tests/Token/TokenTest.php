@@ -1,8 +1,8 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Token;
+namespace tests\Koma136\MyTarget\Token;
 
-use Dsl\MyTarget\Token\Token;
+use Koma136\MyTarget\Token\Token;
 
 class TokenTest extends \PHPUnit_Framework_TestCase
 {

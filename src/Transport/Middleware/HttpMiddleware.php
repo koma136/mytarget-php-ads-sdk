@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Transport\Middleware;
+namespace Koma136\MyTarget\Transport\Middleware;
 
-use Dsl\MyTarget\Context;
+use Koma136\MyTarget\Context;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 

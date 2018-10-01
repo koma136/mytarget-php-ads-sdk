@@ -1,13 +1,13 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Transport\Middleware\Impl;
+namespace tests\Koma136\MyTarget\Transport\Middleware\Impl;
 
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Limiting\Exception\BannerLimitException;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Limiting\Exception\BannerLimitException;
 use GuzzleHttp\Psr7\Request;
-use Dsl\MyTarget\Transport\Exception as ex;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddlewareStack;
-use Dsl\MyTarget\Transport\Middleware\Impl\ResponseValidatingMiddleware;
+use Koma136\MyTarget\Transport\Exception as ex;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddlewareStack;
+use Koma136\MyTarget\Transport\Middleware\Impl\ResponseValidatingMiddleware;
 use Psr\Http\Message\ResponseInterface;
 
 class ResponseValidatingMiddlewareTest extends \PHPUnit_Framework_TestCase

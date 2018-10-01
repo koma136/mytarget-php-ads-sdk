@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V2\Enum;
+namespace Koma136\MyTarget\Domain\V2\Enum;
 
-use Dsl\MyTarget\Domain\AbstractEnum;
+use Koma136\MyTarget\Domain\AbstractEnum;
 
 class Sex extends AbstractEnum
 {

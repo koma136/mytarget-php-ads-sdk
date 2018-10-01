@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V2\SharingKeys;
+namespace Koma136\MyTarget\Domain\V2\SharingKeys;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class ShareClient
 {

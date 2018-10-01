@@ -1,13 +1,13 @@
 <?php
 
-namespace Dsl\MyTarget\Transport\Middleware\Impl;
+namespace Koma136\MyTarget\Transport\Middleware\Impl;
 
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Limiting\Exception\BannerLimitException;
-use Dsl\MyTarget\Limiting\LimitingMiddleware;
-use Dsl\MyTarget\Transport\Exception as ex;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddleware;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddlewareStack;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Limiting\Exception\BannerLimitException;
+use Koma136\MyTarget\Limiting\LimitingMiddleware;
+use Koma136\MyTarget\Transport\Exception as ex;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddleware;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddlewareStack;
 use Psr\Http\Message\RequestInterface;
 
 class ResponseValidatingMiddleware implements HttpMiddleware

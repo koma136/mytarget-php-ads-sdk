@@ -1,9 +1,9 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Mapper\Type;
+namespace tests\Koma136\MyTarget\Mapper\Type;
 
-use Dsl\MyTarget\Mapper\Mapper;
-use Dsl\MyTarget\Mapper\Type\EnumType;
+use Koma136\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Mapper\Type\EnumType;
 
 class EnumTypeTest extends \PHPUnit_Framework_TestCase
 {

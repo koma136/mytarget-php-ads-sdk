@@ -1,17 +1,17 @@
 <?php
-namespace Dsl\MyTarget\Domain\V2\Campaign\Projection\Targeting;
+namespace Koma136\MyTarget\Domain\V2\Campaign\Projection\Targeting;
 
-use Dsl\MyTarget\Domain\V1\Enum\Education;
-use Dsl\MyTarget\Domain\V1\Enum\Employment;
-use Dsl\MyTarget\Domain\V1\Enum\MobileType;
-use Dsl\MyTarget\Domain\V1\Enum as V1Enum;
-use Dsl\MyTarget\Domain\V1\Targeting\CampaignTargeting;
-use Dsl\MyTarget\Domain\V1\Targeting\Fulltime;
-use Dsl\MyTarget\Domain\V1\Targeting\Pad\Pad;
-use Dsl\MyTarget\Domain\V1\Targeting\RemarketingTargeting;
-use Dsl\MyTarget\Domain\V1\Enum\Sex as V1Sex;
-use Dsl\MyTarget\Domain\V2\Enum\Sex;
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\Enum\Education;
+use Koma136\MyTarget\Domain\V1\Enum\Employment;
+use Koma136\MyTarget\Domain\V1\Enum\MobileType;
+use Koma136\MyTarget\Domain\V1\Enum as V1Enum;
+use Koma136\MyTarget\Domain\V1\Targeting\CampaignTargeting;
+use Koma136\MyTarget\Domain\V1\Targeting\Fulltime;
+use Koma136\MyTarget\Domain\V1\Targeting\Pad\Pad;
+use Koma136\MyTarget\Domain\V1\Targeting\RemarketingTargeting;
+use Koma136\MyTarget\Domain\V1\Enum\Sex as V1Sex;
+use Koma136\MyTarget\Domain\V2\Enum\Sex;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class ProjectionTargetingSettings
 {
@@ -23,19 +23,19 @@ class ProjectionTargetingSettings
 
     /**
      * @var Sex[]
-     * @Field(name="sex", type="array<Dsl\MyTarget\Domain\V2\Enum\Sex>")
+     * @Field(name="sex", type="array<Koma136\MyTarget\Domain\V2\Enum\Sex>")
      */
     private $sex;
 
     /**
      * @var Region[]
-     * @Field(name="regions", type="array<Dsl\MyTarget\Domain\V2\Campaign\Projection\Targeting\Region>")
+     * @Field(name="regions", type="array<Koma136\MyTarget\Domain\V2\Campaign\Projection\Targeting\Region>")
      */
     private $regions;
 
     /**
      * @var Fulltime Days and time to show
-     * @Field(name="fulltime", type="Dsl\MyTarget\Domain\V1\Targeting\Fulltime")
+     * @Field(name="fulltime", type="Koma136\MyTarget\Domain\V1\Targeting\Fulltime")
      */
     private $fulltime;
 
@@ -47,37 +47,37 @@ class ProjectionTargetingSettings
 
     /**
      * @var V1Enum\TvType[]
-     * @Field(name="tv_viewer", type="array<Dsl\MyTarget\Domain\V1\Enum\TvType>")
+     * @Field(name="tv_viewer", type="array<Koma136\MyTarget\Domain\V1\Enum\TvType>")
      */
     private $tvViewer;
 
     /**
      * @var V1Enum\Education[]
-     * @Field(name="ps_education", type="array<Dsl\MyTarget\Domain\V1\Enum\TvType>")
+     * @Field(name="ps_education", type="array<Koma136\MyTarget\Domain\V1\Enum\TvType>")
      */
     private $psEducation;
 
     /**
      * @var V1Enum\Employment[]
-     * @Field(type="array<Dsl\MyTarget\Domain\V1\Enum\Employment>")
+     * @Field(type="array<Koma136\MyTarget\Domain\V1\Enum\Employment>")
      */
     private $employment;
 
     /**
      * @var V1Enum\MaritalStatus[]
-     * @Field(name="marital_status", type="array<Dsl\MyTarget\Domain\V1\Enum\MaritalStatus>")
+     * @Field(name="marital_status", type="array<Koma136\MyTarget\Domain\V1\Enum\MaritalStatus>")
      */
     private $martialStatus;
 
     /**
      * @var V1Enum\PersonalIncome[]
-     * @Field(name="personal_income", type="array<Dsl\MyTarget\Domain\V1\Enum\PersonalIncome>")
+     * @Field(name="personal_income", type="array<Koma136\MyTarget\Domain\V1\Enum\PersonalIncome>")
      */
     private $personalIncome;
 
     /**
      * @var RemarketingTargeting[]
-     * @Field(name="remarketing", type="array<Dsl\MyTarget\Domain\V1\Targeting\RemarketingTargeting>")
+     * @Field(name="remarketing", type="array<Koma136\MyTarget\Domain\V1\Targeting\RemarketingTargeting>")
      */
     private $remarketing;
 
@@ -89,7 +89,7 @@ class ProjectionTargetingSettings
 
     /**
      * @var V1Enum\MobileType[]
-     * @Field(name="mobile_types", type="array<Dsl\MyTarget\Domain\V1\Enum\MobileType>")
+     * @Field(name="mobile_types", type="array<Koma136\MyTarget\Domain\V1\Enum\MobileType>")
      */
     private $mobileTypes;
 
@@ -120,7 +120,7 @@ class ProjectionTargetingSettings
     }
 
     /**
-     * @return \Dsl\MyTarget\Domain\V2\Enum\Sex[]
+     * @return \Koma136\MyTarget\Domain\V2\Enum\Sex[]
      */
     public function getSex()
     {
@@ -192,7 +192,7 @@ class ProjectionTargetingSettings
     }
 
     /**
-     * @return \Dsl\MyTarget\Domain\V1\Targeting\RemarketingTargeting[]
+     * @return \Koma136\MyTarget\Domain\V1\Targeting\RemarketingTargeting[]
      */
     public function getRemarketing()
     {

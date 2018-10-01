@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Enum;
+namespace Koma136\MyTarget\Domain\V1\Enum;
 
-use Dsl\MyTarget\Domain\AbstractEnum;
-use Dsl\MyTarget\Exception\UnexpectedValueException;
+use Koma136\MyTarget\Domain\AbstractEnum;
+use Koma136\MyTarget\Exception\UnexpectedValueException;
 
 class Status extends AbstractEnum
 {

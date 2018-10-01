@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Token;
+namespace Koma136\MyTarget\Token;
 
-use DSL\LockInterface;
-use Dsl\MyTarget\Token\Exception\TokenLockException;
+use Koma136\LockInterface;
+use Koma136\MyTarget\Token\Exception\TokenLockException;
 
 class LockManager
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Remarketing;
+namespace Koma136\MyTarget\Domain\V1\Remarketing;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
-use Dsl\MyTarget\Domain\V1\Enum\RemarketingUserListStatus;
-use Dsl\MyTarget\Domain\V1\Enum\RemarketingUserListType;
+use Koma136\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\Enum\RemarketingUserListStatus;
+use Koma136\MyTarget\Domain\V1\Enum\RemarketingUserListType;
 
 class RemarketingUserList
 {
@@ -22,7 +22,7 @@ class RemarketingUserList
 
     /**
      * @var RemarketingUserListType
-     * @Field(type="Dsl\MyTarget\Domain\V1\Enum\RemarketingUserListType")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Enum\RemarketingUserListType")
      */
     private $type;
 
@@ -34,7 +34,7 @@ class RemarketingUserList
 
     /**
      * @var RemarketingUserListStatus
-     * @Field(type="Dsl\MyTarget\Domain\V1\Enum\RemarketingUserListStatus")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Enum\RemarketingUserListStatus")
      */
     private $status;
 

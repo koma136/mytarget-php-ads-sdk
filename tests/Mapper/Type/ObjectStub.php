@@ -1,8 +1,8 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Mapper\Type;
+namespace tests\Koma136\MyTarget\Mapper\Type;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class ObjectStub extends ObjectParentStub
 {

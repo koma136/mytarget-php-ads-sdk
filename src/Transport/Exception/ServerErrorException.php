@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Transport\Exception;
+namespace Koma136\MyTarget\Transport\Exception;
 
-use Dsl\MyTarget\Exception\ApiException;
+use Koma136\MyTarget\Exception\ApiException;
 
 class ServerErrorException extends RequestException
     implements ApiException

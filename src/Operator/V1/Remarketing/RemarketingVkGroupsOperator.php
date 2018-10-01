@@ -1,12 +1,12 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V1\Remarketing;
+namespace Koma136\MyTarget\Operator\V1\Remarketing;
 
-use Dsl\MyTarget\Client;
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Domain\V1\Remarketing\RemarketingVkGroup;
-use Dsl\MyTarget\Domain\V1\Remarketing\RemarketingVkGroupStat;
-use Dsl\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Client;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Domain\V1\Remarketing\RemarketingVkGroup;
+use Koma136\MyTarget\Domain\V1\Remarketing\RemarketingVkGroupStat;
+use Koma136\MyTarget\Mapper\Mapper;
 
 class RemarketingVkGroupsOperator
 {

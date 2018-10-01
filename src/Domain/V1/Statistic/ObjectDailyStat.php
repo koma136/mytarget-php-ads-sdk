@@ -1,20 +1,20 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Statistic;
+namespace Koma136\MyTarget\Domain\V1\Statistic;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class ObjectDailyStat extends ObjectStat
 {
     /**
      * @var DayStat[]
-     * @Field(name="detailed_stat", type="array<Dsl\MyTarget\Domain\V1\Statistic\DayStat>")
+     * @Field(name="detailed_stat", type="array<Koma136\MyTarget\Domain\V1\Statistic\DayStat>")
      */
     private $detailed;
 
     /**
      * @var DayStat
-     * @Field(type="Dsl\MyTarget\Domain\V1\Statistic\DayStat")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Statistic\DayStat")
      */
     private $total;
 

@@ -1,18 +1,18 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Campaign\Projection;
+namespace Koma136\MyTarget\Domain\V1\Campaign\Projection;
 
-use Dsl\MyTarget\Domain\V1\Campaign\Campaign;
-use Dsl\MyTarget\Domain\V1\Campaign\Package;
-use Dsl\MyTarget\Domain\V1\Targeting\CampaignTargeting;
-use Dsl\MyTarget\Domain\V1\User;
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\Campaign\Campaign;
+use Koma136\MyTarget\Domain\V1\Campaign\Package;
+use Koma136\MyTarget\Domain\V1\Targeting\CampaignTargeting;
+use Koma136\MyTarget\Domain\V1\User;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class ProjectionCampaign extends Campaign
 {
     /**
      * @var User
-     * @Field(type="Dsl\MyTarget\Domain\V1\User")
+     * @Field(type="Koma136\MyTarget\Domain\V1\User")
      */
     private $user;
 

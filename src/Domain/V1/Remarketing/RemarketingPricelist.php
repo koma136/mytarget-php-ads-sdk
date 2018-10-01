@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Remarketing;
+namespace Koma136\MyTarget\Domain\V1\Remarketing;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
-use Dsl\MyTarget as f;
+use Koma136\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget as f;
 
 class RemarketingPricelist
 {

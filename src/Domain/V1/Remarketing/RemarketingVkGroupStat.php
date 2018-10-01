@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Remarketing;
+namespace Koma136\MyTarget\Domain\V1\Remarketing;
 
-use Dsl\MyTarget\Domain\V1\Enum\RemarketingLoadedStatus;
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\Enum\RemarketingLoadedStatus;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class RemarketingVkGroupStat extends RemarketingVkGroup
 {
@@ -15,7 +15,7 @@ class RemarketingVkGroupStat extends RemarketingVkGroup
 
     /**
      * @var RemarketingLoadedStatus
-     * @Field(type="Dsl\MyTarget\Domain\V1\Enum\RemarketingLoadedStatus")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Enum\RemarketingLoadedStatus")
      */
     private $status;
 

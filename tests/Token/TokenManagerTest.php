@@ -1,16 +1,16 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Token;
+namespace tests\Koma136\MyTarget\Token;
 
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Token\ClientCredentials\Credentials;
-use Dsl\MyTarget\Token\Exception\TokenDeletedException;
-use Dsl\MyTarget\Token\Exception\TokenLimitReachedException;
-use Dsl\MyTarget\Token\LockManager;
-use Dsl\MyTarget\Token\Token;
-use Dsl\MyTarget\Token\TokenAcquirer;
-use Dsl\MyTarget\Token\TokenManager;
-use Dsl\MyTarget\Token\TokenStorage;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Token\ClientCredentials\Credentials;
+use Koma136\MyTarget\Token\Exception\TokenDeletedException;
+use Koma136\MyTarget\Token\Exception\TokenLimitReachedException;
+use Koma136\MyTarget\Token\LockManager;
+use Koma136\MyTarget\Token\Token;
+use Koma136\MyTarget\Token\TokenAcquirer;
+use Koma136\MyTarget\Token\TokenManager;
+use Koma136\MyTarget\Token\TokenStorage;
 use Psr\Http\Message\RequestInterface;
 
 class TokenManagerTest extends  \PHPUnit_Framework_TestCase

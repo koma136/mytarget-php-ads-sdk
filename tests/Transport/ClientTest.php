@@ -1,18 +1,18 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Transport\Middleware\Impl;
+namespace tests\Koma136\MyTarget\Transport\Middleware\Impl;
 
-use Dsl\MyTarget\Context;
+use Koma136\MyTarget\Context;
 use GuzzleHttp\ClientInterface;
 use GuzzleHttp\Exception as guzzleEx;
 use GuzzleHttp\Psr7 as psr;
 use MyTarget as f;
-use Dsl\MyTarget\Client;
-use Dsl\MyTarget\Transport\Exception as ex;
-use Dsl\MyTarget\Transport\GuzzleHttpTransport;
-use Dsl\MyTarget\Transport\HttpTransport;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddlewareStackPrototype;
-use Dsl\MyTarget\Transport\RequestFactory;
+use Koma136\MyTarget\Client;
+use Koma136\MyTarget\Transport\Exception as ex;
+use Koma136\MyTarget\Transport\GuzzleHttpTransport;
+use Koma136\MyTarget\Transport\HttpTransport;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddlewareStackPrototype;
+use Koma136\MyTarget\Transport\RequestFactory;
 use PHPUnit_Framework_MockObject_MockObject;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;

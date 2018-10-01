@@ -1,12 +1,12 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V2;
+namespace Koma136\MyTarget\Operator\V2;
 
-use Dsl\MyTarget\Client;
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Domain\V2\Campaign\Projection\Projection;
-use Dsl\MyTarget\Domain\V2\Campaign\Projection\ProjectionSettings;
-use Dsl\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Client;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Domain\V2\Campaign\Projection\Projection;
+use Koma136\MyTarget\Domain\V2\Campaign\Projection\ProjectionSettings;
+use Koma136\MyTarget\Mapper\Mapper;
 
 class ProjectionOperator
 {

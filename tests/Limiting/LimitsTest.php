@@ -1,8 +1,8 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Limiting;
+namespace tests\Koma136\MyTarget\Limiting;
 
-use Dsl\MyTarget\Limiting\Limits;
+use Koma136\MyTarget\Limiting\Limits;
 
 class LimitsTest extends \PHPUnit_Framework_TestCase
 {

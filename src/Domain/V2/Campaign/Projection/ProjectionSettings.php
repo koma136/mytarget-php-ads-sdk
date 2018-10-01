@@ -1,30 +1,30 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V2\Campaign\Projection;
+namespace Koma136\MyTarget\Domain\V2\Campaign\Projection;
 
-use Dsl\MyTarget\Domain\V1\Campaign\Campaign;
-use Dsl\MyTarget\Domain\V1\Campaign\Package;
-use Dsl\MyTarget\Domain\V2\Campaign\Projection\Targeting\ProjectionTargetingSettings;
-use Dsl\MyTarget\Exception\InvalidArgumentException;
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\Campaign\Campaign;
+use Koma136\MyTarget\Domain\V1\Campaign\Package;
+use Koma136\MyTarget\Domain\V2\Campaign\Projection\Targeting\ProjectionTargetingSettings;
+use Koma136\MyTarget\Exception\InvalidArgumentException;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class ProjectionSettings
 {
     /**
      * @var Package
-     * @Field(type="Dsl\MyTarget\Domain\V1\Campaign\Package")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Campaign\Package")
      */
     private $package;
 
     /**
      * @var Package
-     * @Field(type="Dsl\MyTarget\Domain\V1\Campaign\Campaign")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Campaign\Campaign")
      */
     private $campaign;
 
     /**
      * @var ProjectionTargetingSettings
-     * @Field(type="Dsl\MyTarget\Domain\V2\Campaign\Projection\Targeting\ProjectionTargetingSettings")
+     * @Field(type="Koma136\MyTarget\Domain\V2\Campaign\Projection\Targeting\ProjectionTargetingSettings")
      */
     private $targetings;
 

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V2\Campaign\Projection\Targeting;
+namespace Koma136\MyTarget\Domain\V2\Campaign\Projection\Targeting;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class Region
 {

@@ -1,23 +1,23 @@
 {
-  "name": "dsl/my-target-sdk",
+  "name": "koma136/mytarget-sdk-php",
   "description": "API bindings for MyTarget",
   "type": "library",
   "require": {
     "doctrine/instantiator": "^1",
     "psr/http-message": "~1",
     "guzzlehttp/psr7": "^1",
-    "doctrine/annotations": "^1"
+    "doctrine/annotations": "^1",
+    "doctrine/cache": "^1"
   },
   "require-dev": {
     "phpunit/phpunit": "^4.7",
     "guzzlehttp/guzzle": "^6",
-    "doctrine/cache": "^1",
     "dsl/cache-control": "0.1.0",
     "psr/log": "^1"
   },
   "license": "Apache License 2.0",
   "autoload": {
-    "psr-4": {"Dsl\\MyTarget\\": "src/", "tests\\Dsl\\MyTarget\\": "tests/"},
+    "psr-4": {"Koma136\\MyTarget\\": "src/", "tests\\Koma136\\MyTarget\\": "tests/"},
     "files": ["src/functions.php"]
   }
 }

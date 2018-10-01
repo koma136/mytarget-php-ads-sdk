@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\Exception;
+namespace Koma136\MyTarget\Operator\Exception;
 
-use Dsl\MyTarget\Exception\MyTargetException;
+use Koma136\MyTarget\Exception\MyTargetException;
 
 class UnexpectedFileArgumentException extends \InvalidArgumentException
     implements MyTargetException

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Limiting\Exception;
+namespace Koma136\MyTarget\Limiting\Exception;
 
-use Dsl\MyTarget\Exception\ApiException;
+use Koma136\MyTarget\Exception\ApiException;
 
 class BannerLimitException extends \Exception implements ApiException 
 {

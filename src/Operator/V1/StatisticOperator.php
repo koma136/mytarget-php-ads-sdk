@@ -1,17 +1,17 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V1;
+namespace Koma136\MyTarget\Operator\V1;
 
-use Dsl\MyTarget\Client;
-use Dsl\MyTarget\Domain\DateRange;
-use Dsl\MyTarget\Domain\V1\Enum\ObjectType;
-use Dsl\MyTarget\Domain\V1\Enum\StatisticType;
-use Dsl\MyTarget\Domain\V1\Statistic\ObjectDailyStat;
-use Dsl\MyTarget\Domain\V1\Statistic\ObjectHourlyStat;
-use Dsl\MyTarget\Domain\V1\Statistic\ObjectStat;
-use Dsl\MyTarget\Mapper\Mapper;
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget as f;
+use Koma136\MyTarget\Client;
+use Koma136\MyTarget\Domain\DateRange;
+use Koma136\MyTarget\Domain\V1\Enum\ObjectType;
+use Koma136\MyTarget\Domain\V1\Enum\StatisticType;
+use Koma136\MyTarget\Domain\V1\Statistic\ObjectDailyStat;
+use Koma136\MyTarget\Domain\V1\Statistic\ObjectHourlyStat;
+use Koma136\MyTarget\Domain\V1\Statistic\ObjectStat;
+use Koma136\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget as f;
 
 class StatisticOperator
 {

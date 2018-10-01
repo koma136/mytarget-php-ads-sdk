@@ -1,6 +1,6 @@
 <?php
 
-namespace Dsl\MyTarget\Operator;
+namespace Koma136\MyTarget\Operator;
 
 abstract class AbstractFields
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Mapper\Exception;
+namespace Koma136\MyTarget\Mapper\Exception;
 
-use Dsl\MyTarget\Exception\MyTargetException;
+use Koma136\MyTarget\Exception\MyTargetException;
 
 class ClassNotFoundException extends \LogicException
     implements MyTargetException, ContextUnawareException

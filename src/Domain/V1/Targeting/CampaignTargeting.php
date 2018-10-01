@@ -1,26 +1,26 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Targeting;
+namespace Koma136\MyTarget\Domain\V1\Targeting;
 
-use Dsl\MyTarget\Domain\V1\Enum;
-use Dsl\MyTarget\Mapper\Annotation\Field;
-use Dsl\MyTarget\Domain\V1\Enum\MobilePrefix;
-use Dsl\MyTarget\Domain\V1\Enum\MobileType;
-use Dsl\MyTarget\Domain\V1\Enum\Sex;
-use Dsl\MyTarget\Domain\V1\Targeting\Pad\Pad;
-use Dsl\MyTarget\Domain\V1\Enum\Employment;
+use Koma136\MyTarget\Domain\V1\Enum;
+use Koma136\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\Enum\MobilePrefix;
+use Koma136\MyTarget\Domain\V1\Enum\MobileType;
+use Koma136\MyTarget\Domain\V1\Enum\Sex;
+use Koma136\MyTarget\Domain\V1\Targeting\Pad\Pad;
+use Koma136\MyTarget\Domain\V1\Enum\Employment;
 
 class CampaignTargeting
 {
     /**
      * @var Pad[]
-     * @Field(name="pads", type="array<Dsl\MyTarget\Domain\V1\Targeting\Pad\Pad>")
+     * @Field(name="pads", type="array<Koma136\MyTarget\Domain\V1\Targeting\Pad\Pad>")
      */
     private $pads;
 
     /**
      * @var RemarketingTargeting[]
-     * @Field(name="remarketing", type="array<Dsl\MyTarget\Domain\V1\Targeting\RemarketingTargeting>")
+     * @Field(name="remarketing", type="array<Koma136\MyTarget\Domain\V1\Targeting\RemarketingTargeting>")
      */
     private $remarketing;
 
@@ -38,31 +38,31 @@ class CampaignTargeting
 
     /**
      * @var Sex
-     * @Field(name="sex", type="Dsl\MyTarget\Domain\V1\Enum\Sex")
+     * @Field(name="sex", type="Koma136\MyTarget\Domain\V1\Enum\Sex")
      */
     private $sex;
 
     /**
      * @var Employment[]
-     * @Field(type="array<Dsl\MyTarget\Domain\V1\Enum\Employment>")
+     * @Field(type="array<Koma136\MyTarget\Domain\V1\Enum\Employment>")
      */
     private $employment;
 
     /**
      * @var Enum\PersonalIncome[]
-     * @Field(name="personal_income", type="array<Dsl\MyTarget\Domain\V1\Enum\PersonalIncome>")
+     * @Field(name="personal_income", type="array<Koma136\MyTarget\Domain\V1\Enum\PersonalIncome>")
      */
     private $personalIncome;
 
     /**
      * @var Enum\MaritalStatus[]
-     * @Field(name="marital_status", type="array<Dsl\MyTarget\Domain\V1\Enum\MaritalStatus>")
+     * @Field(name="marital_status", type="array<Koma136\MyTarget\Domain\V1\Enum\MaritalStatus>")
      */
     private $maritalStatus;
 
     /**
      * @var Enum\TvType[]
-     * @Field(name="tv_viewer", type="array<Dsl\MyTarget\Domain\V1\Enum\TvType>")
+     * @Field(name="tv_viewer", type="array<Koma136\MyTarget\Domain\V1\Enum\TvType>")
      */
     private $tvViewer;
 
@@ -74,13 +74,13 @@ class CampaignTargeting
 
     /**
      * @var Fulltime
-     * @Field(name="fulltime", type="Dsl\MyTarget\Domain\V1\Targeting\Fulltime")
+     * @Field(name="fulltime", type="Koma136\MyTarget\Domain\V1\Targeting\Fulltime")
      */
     private $fulltime;
 
     /**
      * @var Enum\Education[]
-     * @Field(name="f_education", type="array<Dsl\MyTarget\Domain\V1\Enum\TvType>")
+     * @Field(name="f_education", type="array<Koma136\MyTarget\Domain\V1\Enum\TvType>")
      */
     private $education;
 
@@ -98,13 +98,13 @@ class CampaignTargeting
 
     /**
      * @var Language
-     * @Field(name="language", type="Dsl\MyTarget\Domain\V1\Targeting\Language")
+     * @Field(name="language", type="Koma136\MyTarget\Domain\V1\Targeting\Language")
      */
     private $language;
 
     /**
      * @var Birthday
-     * @Field(name="birthday", type="Dsl\MyTarget\Domain\V1\Targeting\Birthday")
+     * @Field(name="birthday", type="Koma136\MyTarget\Domain\V1\Targeting\Birthday")
      */
     private $birthday;
 
@@ -116,25 +116,25 @@ class CampaignTargeting
 
     /**
      * @var LocalGeo
-     * @Field(name="local_geo", type="Dsl\MyTarget\Domain\V1\Targeting\LocalGeo")
+     * @Field(name="local_geo", type="Koma136\MyTarget\Domain\V1\Targeting\LocalGeo")
      */
     private $localGeo;
 
     /**
      * @var AppRecommendation
-     * @Field(name="app_recommendation", type="Dsl\MyTarget\Domain\V1\Targeting\AppRecommendation")
+     * @Field(name="app_recommendation", type="Koma136\MyTarget\Domain\V1\Targeting\AppRecommendation")
      */
     private $appRecommendation;
 
     /**
      * @var MobileType[]
-     * @Field(name="mobile_types", type="array<Dsl\MyTarget\Domain\V1\Enum\MobileType>")
+     * @Field(name="mobile_types", type="array<Koma136\MyTarget\Domain\V1\Enum\MobileType>")
      */
     private $mobileTypes;
 
     /**
      * @var MobilePrefix[]
-     * @Field(name="mobile_prefix", type="array<Dsl\MyTarget\Domain\V1\Enum\MobilePrefix>")
+     * @Field(name="mobile_prefix", type="array<Koma136\MyTarget\Domain\V1\Enum\MobilePrefix>")
      */
     private $mobilePrefix;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Targeting\Pad;
+namespace Koma136\MyTarget\Domain\V1\Targeting\Pad;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
-use Dsl\MyTarget\Domain\V1\PeriodStat;
+use Koma136\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\PeriodStat;
 
 class Pad
 {
@@ -57,13 +57,13 @@ class Pad
 
     /**
      * @var PadGroup
-     * @Field(name="pad_group", type="Dsl\MyTarget\Domain\V1\Targeting\Pad\PadGroup")
+     * @Field(name="pad_group", type="Koma136\MyTarget\Domain\V1\Targeting\Pad\PadGroup")
      */
     private $padGroup;
 
     /**
      * @var EyeUrl
-     * @Field(name="eye_url", type="Dsl\MyTarget\Domain\V1\Targeting\Pad\EyeUrl")
+     * @Field(name="eye_url", type="Koma136\MyTarget\Domain\V1\Targeting\Pad\EyeUrl")
      */
     private $eyeUrl;
 
@@ -81,19 +81,19 @@ class Pad
 
     /**
      * @var PeriodStat
-     * @Field(name="stats", type="Dsl\MyTarget\Domain\V1\PeriodStat")
+     * @Field(name="stats", type="Koma136\MyTarget\Domain\V1\PeriodStat")
      */
     private $stats;
 
     /**
      * @var PeriodStat
-     * @Field(name="stats_today", type="Dsl\MyTarget\Domain\V1\PeriodStat")
+     * @Field(name="stats_today", type="Koma136\MyTarget\Domain\V1\PeriodStat")
      */
     private $statsToday;
 
     /**
      * @var PeriodStat
-     * @Field(name="stats_yesterday", type="Dsl\MyTarget\Domain\V1\PeriodStat")
+     * @Field(name="stats_yesterday", type="Koma136\MyTarget\Domain\V1\PeriodStat")
      */
     private $statsYesterday;
 

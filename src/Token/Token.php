@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Token;
+namespace Koma136\MyTarget\Token;
 
-use Dsl\MyTarget as f;
+use Koma136\MyTarget as f;
 
 class Token
 {

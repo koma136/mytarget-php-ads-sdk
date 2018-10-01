@@ -1,11 +1,11 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1;
+namespace Koma136\MyTarget\Domain\V1;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
-use Dsl\MyTarget\Domain\V1\Enum\Language;
-use Dsl\MyTarget\Domain\V1\Enum\Mailing;
-use Dsl\MyTarget\Domain\V1\Enum\Status;
+use Koma136\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\Enum\Language;
+use Koma136\MyTarget\Domain\V1\Enum\Mailing;
+use Koma136\MyTarget\Domain\V1\Enum\Status;
 
 class UserApi
 {
@@ -41,19 +41,19 @@ class UserApi
 
     /**
      * @var Status
-     * @Field(name="status", type="Dsl\MyTarget\Domain\V1\Enum\Status")
+     * @Field(name="status", type="Koma136\MyTarget\Domain\V1\Enum\Status")
      */
     private $status;
 
     /**
      * @var AdditionalUserInfo
-     * @Field(name="additional_info", type="Dsl\MyTarget\Domain\V1\AdditionalUserInfo")
+     * @Field(name="additional_info", type="Koma136\MyTarget\Domain\V1\AdditionalUserInfo")
      */
     private $additionalInfo;
 
     /**
      * @var Mailing[]
-     * @Field(name="mailings", type="array<Dsl\MyTarget\Domain\V1\Enum\Mailing>")
+     * @Field(name="mailings", type="array<Koma136\MyTarget\Domain\V1\Enum\Mailing>")
      */
     private $mailings;
 
@@ -65,13 +65,13 @@ class UserApi
 
     /**
      * @var UserAccount
-     * @Field(name="account", type="Dsl\MyTarget\Domain\V1\UserAccount")
+     * @Field(name="account", type="Koma136\MyTarget\Domain\V1\UserAccount")
      */
     private $account;
 
     /**
      * @var Agency
-     * @Field(name="agency", type="Dsl\MyTarget\Domain\V1\Agency")
+     * @Field(name="agency", type="Koma136\MyTarget\Domain\V1\Agency")
      */
     private $agency;
 
@@ -113,7 +113,7 @@ class UserApi
 
     /**
      * @var Language
-     * @Field(name="language", type="Dsl\MyTarget\Domain\V1\Enum\Language")
+     * @Field(name="language", type="Koma136\MyTarget\Domain\V1\Enum\Language")
      */
     private $language;
 

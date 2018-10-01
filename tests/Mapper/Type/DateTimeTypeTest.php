@@ -1,9 +1,9 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Mapper\Type;
+namespace tests\Koma136\MyTarget\Mapper\Type;
 
-use Dsl\MyTarget\Mapper\Mapper;
-use Dsl\MyTarget\Mapper\Type\DateTimeType;
+use Koma136\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Mapper\Type\DateTimeType;
 
 class DateTimeTypeTest extends \PHPUnit_Framework_TestCase
 {

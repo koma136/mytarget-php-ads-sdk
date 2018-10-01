@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Token;
+namespace Koma136\MyTarget\Token;
 
-use Dsl\MyTarget\Context;
+use Koma136\MyTarget\Context;
 use Psr\Http\Message\RequestInterface;
 
 interface TokenStorage

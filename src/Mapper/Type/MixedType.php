@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Mapper\Type;
+namespace Koma136\MyTarget\Mapper\Type;
 
-use Dsl\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Mapper\Mapper;
 
 class MixedType implements Type
 {

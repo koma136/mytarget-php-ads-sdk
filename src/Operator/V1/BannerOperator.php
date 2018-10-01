@@ -1,16 +1,16 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V1;
+namespace Koma136\MyTarget\Operator\V1;
 
-use Dsl\MyTarget\Client;
-use Dsl\MyTarget\Domain\V1\Banner\Banner;
-use Dsl\MyTarget\Domain\V1\Banner\BannerStat;
-use Dsl\MyTarget\Domain\V1\Enum\Status;
-use Dsl\MyTarget\Mapper\Mapper;
-use Dsl\MyTarget\Operator\V1\Fields\BannerFields;
-use Dsl\MyTarget as f;
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Operator\V1\Fields\BannerRequest;
+use Koma136\MyTarget\Client;
+use Koma136\MyTarget\Domain\V1\Banner\Banner;
+use Koma136\MyTarget\Domain\V1\Banner\BannerStat;
+use Koma136\MyTarget\Domain\V1\Enum\Status;
+use Koma136\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Operator\V1\Fields\BannerFields;
+use Koma136\MyTarget as f;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Operator\V1\Fields\BannerRequest;
 
 class BannerOperator
 {

@@ -1,6 +1,6 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\Exception;
+namespace Koma136\MyTarget\Domain\Exception;
 
 class InvalidEnumValueException extends \InvalidArgumentException
 {

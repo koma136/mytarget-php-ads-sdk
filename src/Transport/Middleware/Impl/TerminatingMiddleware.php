@@ -1,11 +1,11 @@
 <?php
 
-namespace Dsl\MyTarget\Transport\Middleware\Impl;
+namespace Koma136\MyTarget\Transport\Middleware\Impl;
 
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Transport\HttpTransport;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddleware;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddlewareStack;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Transport\HttpTransport;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddleware;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddlewareStack;
 use Psr\Http\Message\RequestInterface;
 
 class TerminatingMiddleware implements HttpMiddleware

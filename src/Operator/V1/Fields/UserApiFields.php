@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V1\Fields;
+namespace Koma136\MyTarget\Operator\V1\Fields;
 
-use Dsl\MyTarget\Operator\AbstractFields;
+use Koma136\MyTarget\Operator\AbstractFields;
 
 /**
  * @method UserApiFields withId()

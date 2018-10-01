@@ -1,6 +1,6 @@
 <?php
 
-namespace Dsl\MyTarget;
+namespace Koma136\MyTarget;
 
 class Context
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Mapper\Type;
+namespace tests\Koma136\MyTarget\Mapper\Type;
 
-use Dsl\MyTarget\Mapper\Exception\ContextUnawareException;
+use Koma136\MyTarget\Mapper\Exception\ContextUnawareException;
 
 class ContextUnawareExceptionStub extends \Exception implements ContextUnawareException
 {

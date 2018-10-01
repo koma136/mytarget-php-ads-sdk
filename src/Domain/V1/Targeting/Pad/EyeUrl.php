@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Targeting\Pad;
+namespace Koma136\MyTarget\Domain\V1\Targeting\Pad;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class EyeUrl
 {

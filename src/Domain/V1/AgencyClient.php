@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1;
+namespace Koma136\MyTarget\Domain\V1;
 
-use Dsl\MyTarget\Domain\V1\Enum\Status;
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\Enum\Status;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class AgencyClient
 {
@@ -21,19 +21,19 @@ class AgencyClient
 
     /**
      * @var Status
-     * @Field(type="Dsl\MyTarget\Domain\V1\Enum\Status")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Enum\Status")
      */
     private $status;
 
     /**
      * @var AdditionalUserInfo
-     * @Field(name="additional_info", type="Dsl\MyTarget\Domain\V1\AdditionalUserInfo")
+     * @Field(name="additional_info", type="Koma136\MyTarget\Domain\V1\AdditionalUserInfo")
      */
     private $additionalInfo;
 
     /**
      * @var UserAccount
-     * @Field(type="Dsl\MyTarget\Domain\V1\UserAccount")
+     * @Field(type="Koma136\MyTarget\Domain\V1\UserAccount")
      */
     private $account;
 

@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Limiting\Exception;
+namespace Koma136\MyTarget\Limiting\Exception;
 
-use Dsl\MyTarget\Transport\Exception\RequestException;
-use Dsl\MyTarget\Exception\ApiException;
+use Koma136\MyTarget\Transport\Exception\RequestException;
+use Koma136\MyTarget\Exception\ApiException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 

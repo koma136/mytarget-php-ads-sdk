@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Targeting\Pad;
+namespace Koma136\MyTarget\Domain\V1\Targeting\Pad;
 
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class PadForPadGroup
 {
@@ -51,7 +51,7 @@ class PadForPadGroup
 
     /**
      * @var PadFilter
-     * @Field(name="filters", type="Dsl\MyTarget\Domain\V1\Targeting\Pad\PadFilter")
+     * @Field(name="filters", type="Koma136\MyTarget\Domain\V1\Targeting\Pad\PadFilter")
      */
     private $filters;
 
@@ -204,7 +204,7 @@ class PadForPadGroup
     }
 
     /**
-     * @param \Dsl\MyTarget\Domain\V1\Targeting\Pad\PadFilter $filters
+     * @param \Koma136\MyTarget\Domain\V1\Targeting\Pad\PadFilter $filters
      */
     public function setFilters($filters)
     {

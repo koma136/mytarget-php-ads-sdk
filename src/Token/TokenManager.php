@@ -1,13 +1,13 @@
 <?php
 
-namespace Dsl\MyTarget\Token;
+namespace Koma136\MyTarget\Token;
 
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Token\ClientCredentials\CredentialsProvider;
-use Dsl\MyTarget\Token\Exception\TokenDeletedException;
-use Dsl\MyTarget\Token\Exception\TokenLimitReachedException;
-use Dsl\MyTarget\Token\Exception\TokenLockException;
-use Dsl\MyTarget\Token\Exception\TokenRequestException;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Token\ClientCredentials\CredentialsProvider;
+use Koma136\MyTarget\Token\Exception\TokenDeletedException;
+use Koma136\MyTarget\Token\Exception\TokenLimitReachedException;
+use Koma136\MyTarget\Token\Exception\TokenLockException;
+use Koma136\MyTarget\Token\Exception\TokenRequestException;
 use Psr\Http\Message\RequestInterface;
 use Psr\Log\LoggerInterface;
 use Psr\Log\NullLogger;

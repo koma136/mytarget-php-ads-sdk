@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Remarketing;
+namespace Koma136\MyTarget\Domain\V1\Remarketing;
 
-use Dsl\MyTarget\Domain\V1\Enum\RemarketingGroupType;
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\Enum\RemarketingGroupType;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class RemarketingGroup
 {
@@ -15,7 +15,7 @@ class RemarketingGroup
 
     /**
      * @var RemarketingGroupType
-     * @Field(type="Dsl\MyTarget\Domain\V1\Enum\RemarketingGroupType")
+     * @Field(type="Koma136\MyTarget\Domain\V1\Enum\RemarketingGroupType")
      */
     private $type;
 

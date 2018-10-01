@@ -1,12 +1,12 @@
 <?php
 
-namespace tests\Dsl\MyTarget\Limiting;
+namespace tests\Koma136\MyTarget\Limiting;
 
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget\Limiting\DoctrineCacheRateLimitProvider;
-use Dsl\MyTarget\Limiting\LimitExtractor;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget\Limiting\DoctrineCacheRateLimitProvider;
+use Koma136\MyTarget\Limiting\LimitExtractor;
 use Doctrine\Common\Cache\Cache;
-use Dsl\MyTarget\Limiting\Limits;
+use Koma136\MyTarget\Limiting\Limits;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 

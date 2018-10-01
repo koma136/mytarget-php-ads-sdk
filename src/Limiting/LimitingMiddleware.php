@@ -1,14 +1,14 @@
 <?php
 
-namespace Dsl\MyTarget\Limiting;
+namespace Koma136\MyTarget\Limiting;
 
-use Dsl\MyTarget\Limiting\Exception as Ex;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddleware;
-use Dsl\MyTarget\Transport\Middleware\HttpMiddlewareStack;
+use Koma136\MyTarget\Limiting\Exception as Ex;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddleware;
+use Koma136\MyTarget\Transport\Middleware\HttpMiddlewareStack;
 use Psr\Http\Message\RequestInterface;
-use Dsl\MyTarget\Exception\DecodingException;
-use Dsl\MyTarget as f;
-use Dsl\MyTarget\Context;
+use Koma136\MyTarget\Exception\DecodingException;
+use Koma136\MyTarget as f;
+use Koma136\MyTarget\Context;
 
 class LimitingMiddleware implements HttpMiddleware
 {

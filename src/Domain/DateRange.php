@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Domain;
+namespace Koma136\MyTarget\Domain;
 
-use Dsl\MyTarget as f;
+use Koma136\MyTarget as f;
 
 class DateRange
 {

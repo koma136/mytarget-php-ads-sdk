@@ -1,8 +1,8 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V2\Campaign\Projection;
+namespace Koma136\MyTarget\Domain\V2\Campaign\Projection;
 
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class Projection
 {
@@ -26,7 +26,7 @@ class Projection
 
     /**
      * @var ProjectionPoint[]
-     * @Field(type="array<Dsl\MyTarget\Domain\V1\Campaign\Projection\ProjectionPoint>", name="histogram")
+     * @Field(type="array<Koma136\MyTarget\Domain\V1\Campaign\Projection\ProjectionPoint>", name="histogram")
      */
     private $histogram;
 

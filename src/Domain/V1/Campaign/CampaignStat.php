@@ -1,33 +1,33 @@
 <?php
 
-namespace Dsl\MyTarget\Domain\V1\Campaign;
+namespace Koma136\MyTarget\Domain\V1\Campaign;
 
-use Dsl\MyTarget\Domain\V1\PeriodStat;
-use Dsl\MyTarget\Mapper\Annotation\Field;
+use Koma136\MyTarget\Domain\V1\PeriodStat;
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class CampaignStat extends Campaign
 {
     /**
      * @var PeriodStat
-     * @Field(name="stats", type="Dsl\MyTarget\Domain\V1\PeriodStat")
+     * @Field(name="stats", type="Koma136\MyTarget\Domain\V1\PeriodStat")
      */
     private $stats;
 
     /**
      * @var PeriodStat
-     * @Field(name="stats_today", type="Dsl\MyTarget\Domain\V1\PeriodStat")
+     * @Field(name="stats_today", type="Koma136\MyTarget\Domain\V1\PeriodStat")
      */
     private $statsToday;
 
     /**
      * @var PeriodStat
-     * @Field(name="stats_yesterday", type="Dsl\MyTarget\Domain\V1\PeriodStat")
+     * @Field(name="stats_yesterday", type="Koma136\MyTarget\Domain\V1\PeriodStat")
      */
     private $statsYesterday;
 
     /**
      * @var PeriodStat[]
-     * @Field(name="stats_full", type="array<Dsl\MyTarget\Domain\V1\PeriodStat>")
+     * @Field(name="stats_full", type="array<Koma136\MyTarget\Domain\V1\PeriodStat>")
      */
     private $statsFull;
 

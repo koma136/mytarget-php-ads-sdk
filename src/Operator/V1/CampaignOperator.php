@@ -1,16 +1,16 @@
 <?php
 
-namespace Dsl\MyTarget\Operator\V1;
+namespace Koma136\MyTarget\Operator\V1;
 
-use Dsl\MyTarget\Domain\V1\Campaign\Campaign;
-use Dsl\MyTarget\Domain\V1\Campaign\CampaignStat;
-use Dsl\MyTarget\Domain\V1\Campaign\MutateCampaign;
-use Dsl\MyTarget\Domain\V1\Enum\Status;
-use Dsl\MyTarget\Mapper\Mapper;
-use Dsl\MyTarget\Operator\V1\Fields\CampaignFields;
-use Dsl\MyTarget\Client;
-use Dsl\MyTarget\Context;
-use Dsl\MyTarget as f;
+use Koma136\MyTarget\Domain\V1\Campaign\Campaign;
+use Koma136\MyTarget\Domain\V1\Campaign\CampaignStat;
+use Koma136\MyTarget\Domain\V1\Campaign\MutateCampaign;
+use Koma136\MyTarget\Domain\V1\Enum\Status;
+use Koma136\MyTarget\Mapper\Mapper;
+use Koma136\MyTarget\Operator\V1\Fields\CampaignFields;
+use Koma136\MyTarget\Client;
+use Koma136\MyTarget\Context;
+use Koma136\MyTarget as f;
 
 class CampaignOperator
 {

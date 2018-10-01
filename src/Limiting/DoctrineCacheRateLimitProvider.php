@@ -1,9 +1,9 @@
 <?php
 
-namespace Dsl\MyTarget\Limiting;
+namespace Koma136\MyTarget\Limiting;
 
 use Doctrine\Common\Cache\Cache;
-use Dsl\MyTarget\Context;
+use Koma136\MyTarget\Context;
 use Psr\Http\Message\RequestInterface;
 use Psr\Http\Message\ResponseInterface;
 
