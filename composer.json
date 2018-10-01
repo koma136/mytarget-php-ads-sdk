@@ -15,7 +15,7 @@
     "dsl/cache-control": "0.1.0",
     "psr/log": "^1"
   },
-  "license": "Apache License 2.0",
+  "license": "Apache-2.0",
   "autoload": {
     "psr-4": {"Koma136\\MyTarget\\": "src/", "tests\\Koma136\\MyTarget\\": "tests/"},
     "files": ["src/functions.php"]
