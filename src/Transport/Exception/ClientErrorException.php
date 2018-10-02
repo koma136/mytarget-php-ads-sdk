@@ -16,7 +16,7 @@ class ClientErrorException extends RequestException
      */
     public static function fromResponse(RequestInterface $req, ResponseInterface $res)
     {
-        $message = "MyTarget: {$res->getStatusCode()} Client Error";
+        $message = "MyTarget: Client Error {$res->getStatusCode()} {$res->getReasonPhrase()} {$res->getBody()}";
 
         switch ($res->getStatusCode()) {
             case 404:
