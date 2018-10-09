@@ -3,8 +3,9 @@
 namespace Koma136\MyTarget\Domain\V1;
 
 use Koma136\MyTarget\Mapper\Annotation\Field;
+use yii\base\BaseObject;
 
-class AdditionalUserInfo
+class AdditionalUserInfo extends BaseObject
 {
     /**
      * @var string

@@ -4,8 +4,9 @@ namespace Koma136\MyTarget\Domain\V1;
 
 use Koma136\MyTarget\Domain\V1\Enum\Status;
 use Koma136\MyTarget\Mapper\Annotation\Field;
+use Yii\base\BaseObject;
 
-class AgencyClient
+class AgencyClient extends BaseObject
 {
     /**
      * @var int

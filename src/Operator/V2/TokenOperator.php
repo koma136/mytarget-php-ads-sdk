@@ -49,7 +49,7 @@ class TokenOperator
 
         $json = $this->client->postMultipart(self::TOKEN_URL, $payload, null, $context);
 
-        return Token::fromResponse($json,DateTimeInterface('now'));
+        return Token::fromResponse($json,new \DateTimeImmutable('now'));
     }
 
     /**
@@ -70,6 +70,6 @@ class TokenOperator
 
         $json = $this->client->postMultipart(self::TOKEN_URL, $payload, null, $context);
 
-        return Token::fromResponse($json,DateTimeInterface('now'));
+        return Token::fromResponse($json,new \DateTimeImmutable('now'));
     }
 }
