@@ -2,6 +2,7 @@
 
 namespace Koma136\MyTarget\Domain\V2;
 
+use Koma136\MyTarget\Mapper\Annotation\Field;
 
 class AgencyClientSettings
 {
@@ -19,6 +20,7 @@ class AgencyClientSettings
     
     /**
      * @var UserClient
+     * @Field(name="UserClient", type="UserClient")
      */
     private $user;
     
