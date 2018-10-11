@@ -17,7 +17,7 @@ class UserClient extends BaseObject
      * @var AdditionalClientInfo
      * @Field(name="additional_info", type="AdditionalClientInfo")
      */
-    private $additional_info;
+    private $additionalInfo;
 
     /**
      * @var int
@@ -59,7 +59,7 @@ class UserClient extends BaseObject
      */
     public function getAdditionalInfo()
     {
-        return $this->additional_info;
+        return $this->additionalInfo;
     }
 
     /**
@@ -68,7 +68,7 @@ class UserClient extends BaseObject
      */
     public function setAdditionalClientInfo(AdditionalClientInfo $additionalClientInfo)
     {
-        return $this->additional_info = $additionalClientInfo;
+        return $this->additionalInfo = $additionalClientInfo;
     }
 
     /**

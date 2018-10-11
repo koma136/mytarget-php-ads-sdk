@@ -2,10 +2,11 @@
 
 namespace Koma136\MyTarget\Domain\V2\Users;
 
+use Koma136\MyTarget\Mapper\Annotation\Field;
+use Yii\base\BaseObject;
 
-use yii\base\BaseObject;
 
-class UserAccount extends BaseObject
+class BranchUserAccount extends BaseObject
 {
     /**
      * @var int
@@ -24,12 +25,6 @@ class UserAccount extends BaseObject
      * @Field(name="currency_balance_hold", type="int")
      */
     private $currencyBalanceHold;
-
-    /**
-     * @var int
-     * @Field(type="int")
-     */
-    private $id;
 
     /**
      * @var string
@@ -86,23 +81,6 @@ class UserAccount extends BaseObject
     public function setCurrencyBalanceHold($currencyBalanceHold)
     {
         return $this->currencyBalanceHold = $currencyBalanceHold;
-    }
-
-    /**
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param $id
-     * @return mixed
-     */
-    public function setId($id)
-    {
-        return $this->id = $id;
     }
 
     /**
