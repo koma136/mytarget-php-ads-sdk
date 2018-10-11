@@ -9,7 +9,7 @@ class UserClient extends BaseObject
 {
     /**
      * @var UserAccount
-     * @Field(name="UserAccount", type="UserAccount")
+     * @Field(name="UserAccount", type="Koma136\MyTarget\Domain\V2\Users\UserAccount")
      */
     private $account;
 
