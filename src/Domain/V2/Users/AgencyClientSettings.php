@@ -1,10 +1,13 @@
 <?php
 
-namespace Koma136\MyTarget\Domain\V2;
+namespace Koma136\MyTarget\Domain\V2\Users;
 
 use Koma136\MyTarget\Mapper\Annotation\Field;
 
-class AgencyClientSettings
+use Yii\base\BaseObject;
+use Koma136\MyTarget\Domain\V2\Users\UserClient;
+
+class AgencyClientSettings extends BaseObject
 {
     /**
      * @var string
@@ -20,7 +23,7 @@ class AgencyClientSettings
     
     /**
      * @var UserClient
-     * @Field(name="UserClient", type="UserClient")
+     * @Field(name="UserClient", type="Koma136\MyTarget\Domain\V2\Users\UserClient")
      */
     private $user;
     
