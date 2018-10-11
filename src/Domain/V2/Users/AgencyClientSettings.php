@@ -11,13 +11,13 @@ class AgencyClientSettings extends BaseObject
 {
     /**
      * @var string
-     * @Field(name="access_type", type="string")
+     * @Field(type="string")
      */
     private $access_type;
     
     /**
      * @var string
-     * @Field(name="status", type="string")
+     * @Field(type="string")
      */
     private $status;
     

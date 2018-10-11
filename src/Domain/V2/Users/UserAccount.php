@@ -9,19 +9,19 @@ class UserAccount extends BaseObject
 {
     /**
      * @var int
-     * @Field(name="a_balance", type="int")
+     * @Field(type="int")
      */
     private $a_balance;
 
     /**
      * @var int
-     * @Field(name="balance", type="int")
+     * @Field(type="int")
      */
     private $balance;
 
     /**
      * @var int
-     * @Field(name="currency_balance_hold", type="int")
+     * @Field(type="int")
      */
     private $currency_balance_hold;
 
@@ -33,7 +33,7 @@ class UserAccount extends BaseObject
 
     /**
      * @var string
-     * @Field(name="type", type="string")
+     * @Field(type="string")
      */
     private $type;
 

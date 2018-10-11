@@ -9,13 +9,13 @@ class UserClient extends BaseObject
 {
     /**
      * @var UserAccount
-     * @Field(name="UserAccount", type="Koma136\MyTarget\Domain\V2\Users\UserAccount")
+     * @Field(name="account", type="Koma136\MyTarget\Domain\V2\Users\UserAccount")
      */
     private $account;
 
     /**
      * @var AdditionalClientInfo
-     * @Field(name="AdditionalClientInfo", type="AdditionalClientInfo")
+     * @Field(name="additional_info", type="AdditionalClientInfo")
      */
     private $additional_info;
 
@@ -27,13 +27,13 @@ class UserClient extends BaseObject
 
     /**
      * @var string
-     * @Field(name="status", type="string")
+     * @Field(type="string")
      */
     private $status;
 
     /**
      * @var string
-     * @Field(name="username", type="string")
+     * @Field(type="string")
      */
     private $username;
 
