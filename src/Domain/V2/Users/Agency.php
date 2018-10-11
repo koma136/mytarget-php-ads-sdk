@@ -36,11 +36,10 @@ class Agency extends BaseObject
 
     /**
      * @param $buyerCommission
-     * @return mixed
      */
     public function setBuyerCommission($buyerCommission)
     {
-        return $this->buyerCommission = $buyerCommission;
+        $this->buyerCommission = $buyerCommission;
     }
 
     /**
@@ -69,10 +68,9 @@ class Agency extends BaseObject
 
     /**
      * @param $overridingCommission
-     * @return mixed
      */
     public function setOverridingCommission($overridingCommission)
     {
-        return $this->overridingCommission = $overridingCommission;
+        $this->overridingCommission = $overridingCommission;
     }
 }

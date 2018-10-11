@@ -25,10 +25,9 @@ class AgencyManager extends BaseObject
 
     /**
      * @param \Koma136\MyTarget\Domain\V2\Users\UserManager $user
-     * @return \Koma136\MyTarget\Domain\V2\Users\UserManager
      */
     public function setUser(UserManager $user)
     {
-        return $this->user = $user;
+        $this->user = $user;
     }
 }

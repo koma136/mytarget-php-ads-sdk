@@ -42,11 +42,10 @@ class BranchUserAccount extends BaseObject
 
     /**
      * @param $aBalance
-     * @return mixed
      */
     public function setABalance($aBalance)
     {
-        return $this->aBalance = $aBalance;
+        $this->aBalance = $aBalance;
     }
 
     /**
@@ -59,11 +58,10 @@ class BranchUserAccount extends BaseObject
 
     /**
      * @param $balance
-     * @return mixed
      */
     public function setBalance($balance)
     {
-        return $this->balance = $balance;
+        $this->balance = $balance;
     }
 
     /**
@@ -76,11 +74,10 @@ class BranchUserAccount extends BaseObject
 
     /**
      * @param $currencyBalanceHold
-     * @return mixed
      */
     public function setCurrencyBalanceHold($currencyBalanceHold)
     {
-        return $this->currencyBalanceHold = $currencyBalanceHold;
+        $this->currencyBalanceHold = $currencyBalanceHold;
     }
 
     /**
@@ -93,10 +90,9 @@ class BranchUserAccount extends BaseObject
 
     /**
      * @param $type
-     * @return mixed
      */
     public function setType($type)
     {
-        return $this->type = $type;
+        $this->type = $type;
     }
 }

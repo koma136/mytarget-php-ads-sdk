@@ -54,11 +54,10 @@ class AdditionalBranchClientInfo extends BaseObject
 
     /**
      * @param $address
-     * @return mixed
      */
     public function set($address)
     {
-        return $this->address = $address;
+        $this->address = $address;
     }
 
     /**
@@ -71,11 +70,10 @@ class AdditionalBranchClientInfo extends BaseObject
 
     /**
      * @param $clientInfo
-     * @return mixed
      */
     public function setClientInfo($clientInfo)
     {
-        return $this->client_info = $clientInfo;
+        $this->client_info = $clientInfo;
     }
 
     /**
@@ -88,11 +86,10 @@ class AdditionalBranchClientInfo extends BaseObject
 
     /**
      * @param $clientName
-     * @return mixed
      */
     public function setClientName($clientName)
     {
-        return $this->client_name = $clientName;
+        $this->client_name = $clientName;
     }
 
     /**
@@ -105,11 +102,10 @@ class AdditionalBranchClientInfo extends BaseObject
 
     /**
      * @param $email
-     * @return mixed
      */
     public function setEmail($email)
     {
-        return $this->email = $email;
+        $this->email = $email;
     }
 
     /**
@@ -122,11 +118,10 @@ class AdditionalBranchClientInfo extends BaseObject
 
     /**
      * @param $name
-     * @return mixed
      */
     public function setName($name)
     {
-        return $this->name = $name;
+        $this->name = $name;
     }
 
     /**
@@ -139,10 +134,9 @@ class AdditionalBranchClientInfo extends BaseObject
 
     /**
      * @param $phone
-     * @return mixed
      */
     public function setPhone($phone)
     {
-        return $this->phone = $phone;
+        $this->phone = $phone;
     }
 }

@@ -69,6 +69,14 @@ class ReservedAmount extends BaseObject
     }
 
     /**
+     * @param $credit
+     */
+    public function setCredit($credit)
+    {
+        $this->credit = $credit;
+    }
+
+    /**
      * @return int
      */
     public function getGBalance()
@@ -82,14 +90,6 @@ class ReservedAmount extends BaseObject
     public function setGBalance($gBalance)
     {
         $this->gBalance = $gBalance;
-    }
-
-    /**
-     * @param $credit
-     */
-    public function setCredit($credit)
-    {
-        $this->credit = $credit;
     }
 
     /**

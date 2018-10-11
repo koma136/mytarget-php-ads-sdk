@@ -47,11 +47,10 @@ class BranchUserClient extends BaseObject
 
     /**
      * @param BranchUserAccount $account
-     * @return BranchUserAccount
      */
     public function setAccount(BranchUserAccount $account)
     {
-        return $this->account = $account;
+        $this->account = $account;
     }
 
     /**
@@ -64,11 +63,10 @@ class BranchUserClient extends BaseObject
 
     /**
      * @param AdditionalBranchClientInfo $additionalInfo
-     * @return AdditionalBranchClientInfo
      */
     public function setAdditionalInfo(AdditionalBranchClientInfo $additionalInfo)
     {
-        return $this->additionalInfo = $additionalInfo;
+        $this->additionalInfo = $additionalInfo;
     }
 
     /**
@@ -81,11 +79,10 @@ class BranchUserClient extends BaseObject
 
     /**
      * @param $id
-     * @return mixed
      */
     public function setId($id)
     {
-        return $this->id = $id;
+        $this->id = $id;
     }
 
     /**
@@ -98,11 +95,10 @@ class BranchUserClient extends BaseObject
 
     /**
      * @param $status
-     * @return mixed
      */
     public function setStatus($status)
     {
-        return $this->status = $status;
+        $this->status = $status;
     }
 
     /**
@@ -115,11 +111,10 @@ class BranchUserClient extends BaseObject
 
     /**
      * @param $username
-     * @return mixed
      */
     public function setUsername($username)
     {
-        return $this->username = $username;
+        $this->username = $username;
     }
 
 }

@@ -37,11 +37,10 @@ class AgencyManagerClient extends BaseObject
 
     /**
      * @param $accessType
-     * @return mixed
      */
     public function setAccessType($accessType)
     {
-        return $this->accessType = $accessType;
+        $this->accessType = $accessType;
     }
 
     /**
@@ -54,11 +53,10 @@ class AgencyManagerClient extends BaseObject
 
     /**
      * @param $status
-     * @return mixed
      */
     public function setStatus($status)
     {
-        return $this->status = $status;
+        $this->status = $status;
     }
 
     /**
@@ -71,10 +69,9 @@ class AgencyManagerClient extends BaseObject
 
     /**
      * @param \Koma136\MyTarget\Domain\V2\Users\UserManagerClient $user
-     * @return \Koma136\MyTarget\Domain\V2\Users\UserManagerClient
      */
     public function setUser(UserManagerClient $user)
     {
-        return $this->user = $user;
+        $this->user = $user;
     }
 }

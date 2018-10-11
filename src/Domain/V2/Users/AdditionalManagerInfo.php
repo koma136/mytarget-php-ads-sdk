@@ -24,10 +24,9 @@ class AdditionalManagerInfo extends BaseObject
 
     /**
      * @param $clientName
-     * @return mixed
      */
     public function setClientName($clientName)
     {
-        return $this->client_name = $clientName;
+        $this->client_name = $clientName;
     }
 }

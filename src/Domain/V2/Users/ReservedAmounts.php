@@ -24,10 +24,9 @@ class ReservedAmounts extends BaseObject
 
     /**
      * @param ReservedAmount $reservedAmounts
-     * @return ReservedAmount
      */
     public function setReservedAmounts(ReservedAmount $reservedAmounts)
     {
-        return $this->reservedAmounts = $reservedAmounts;
+        $this->reservedAmounts = $reservedAmounts;
     }
 }

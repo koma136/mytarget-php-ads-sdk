@@ -47,11 +47,10 @@ class UserClient extends BaseObject
 
     /**
      * @param UserAccount $account
-     * @return UserAccount
      */
     public function setUserAccount(UserAccount $account)
     {
-        return $this->account = $account;
+        $this->account = $account;
     }
 
     /**
@@ -64,11 +63,10 @@ class UserClient extends BaseObject
 
     /**
      * @param AdditionalClientInfo $additionalClientInfo
-     * @return AdditionalClientInfo
      */
     public function setAdditionalClientInfo(AdditionalClientInfo $additionalClientInfo)
     {
-        return $this->additionalInfo = $additionalClientInfo;
+        $this->additionalInfo = $additionalClientInfo;
     }
 
     /**
@@ -81,11 +79,10 @@ class UserClient extends BaseObject
 
     /**
      * @param $id
-     * @return mixed
      */
     public function setId($id)
     {
-        return $this->id = $id;
+        $this->id = $id;
     }
 
     /**
@@ -98,11 +95,10 @@ class UserClient extends BaseObject
 
     /**
      * @param $status
-     * @return mixed
      */
     public function setStatus($status)
     {
-        return $this->status = $status;
+        $this->status = $status;
     }
 
     /**
@@ -115,10 +111,9 @@ class UserClient extends BaseObject
 
     /**
      * @param $username
-     * @return mixed
      */
     public function setUsername($username)
     {
-        return $this->username = $username;
+        $this->username = $username;
     }
 }

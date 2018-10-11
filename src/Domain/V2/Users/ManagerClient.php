@@ -36,11 +36,10 @@ class ManagerClient extends BaseObject
 
     /**
      * @param $accessType
-     * @return mixed
      */
     public function setAccessType($accessType)
     {
-        return $this->accessType = $accessType;
+        $this->accessType = $accessType;
     }
 
     /**
@@ -53,11 +52,10 @@ class ManagerClient extends BaseObject
 
     /**
      * @param $status
-     * @return mixed
      */
     public function setStatus($status)
     {
-        return $this->status = $status;
+        $this->status = $status;
     }
 
     /**
@@ -70,10 +68,9 @@ class ManagerClient extends BaseObject
 
     /**
      * @param \Koma136\MyTarget\Domain\V2\Users\UserClient $user
-     * @return \Koma136\MyTarget\Domain\V2\Users\UserClient
      */
     public function setUser(UserClient $user)
     {
-        return $this->user = $user;
+        $this->user = $user;
     }
 }

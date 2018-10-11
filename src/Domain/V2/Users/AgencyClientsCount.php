@@ -36,11 +36,10 @@ class AgencyClientsCount extends BaseObject
 
     /**
      * @param $active
-     * @return mixed
      */
     public function setActive($active)
     {
-        return $this->active = $active;
+        $this->active = $active;
     }
 
     /**
@@ -53,11 +52,10 @@ class AgencyClientsCount extends BaseObject
 
     /**
      * @param $blocked
-     * @return mixed
      */
     public function setBlocked($blocked)
     {
-        return $this->blocked = $blocked;
+        $this->blocked = $blocked;
     }
 
     /**
@@ -70,10 +68,9 @@ class AgencyClientsCount extends BaseObject
 
     /**
      * @param $deleted
-     * @return mixed
      */
     public function setDeleted($deleted)
     {
-        return $this->deleted = $deleted;
+        $this->deleted = $deleted;
     }
 }

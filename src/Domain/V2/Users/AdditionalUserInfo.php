@@ -16,15 +16,15 @@ class AdditionalUserInfo extends BaseObject
 
     /**
      * @var string
-     * @Field(type="string")
+     * @Field(name="client_info", type="string")
      */
-    private $client_info;
+    private $clientInfo;
 
     /**
      * @var string
-     * @Field(type="string")
+     * @Field(name="client_name", type="string")
      */
-    private $client_name;
+    private $clientName;
 
     /**
      * @var string
@@ -48,11 +48,10 @@ class AdditionalUserInfo extends BaseObject
 
     /**
      * @param $address
-     * @return mixed
      */
-    public function set($address)
+    public function setAddress($address)
     {
-        return $this->address = $address;
+        $this->address = $address;
     }
 
     /**
@@ -60,16 +59,15 @@ class AdditionalUserInfo extends BaseObject
      */
     public function getClientInfo()
     {
-        return $this->client_info;
+        return $this->clientInfo;
     }
 
     /**
      * @param $clientInfo
-     * @return mixed
      */
     public function setClientInfo($clientInfo)
     {
-        return $this->client_info = $clientInfo;
+        $this->clientInfo = $clientInfo;
     }
 
     /**
@@ -77,16 +75,15 @@ class AdditionalUserInfo extends BaseObject
      */
     public function getClientName()
     {
-        return $this->client_name;
+        return $this->clientName;
     }
 
     /**
      * @param $clientName
-     * @return mixed
      */
     public function setClientName($clientName)
     {
-        return $this->client_name = $clientName;
+        $this->clientName = $clientName;
     }
 
     /**
@@ -99,11 +96,10 @@ class AdditionalUserInfo extends BaseObject
 
     /**
      * @param $name
-     * @return mixed
      */
     public function setName($name)
     {
-        return $this->name = $name;
+        $this->name = $name;
     }
 
     /**
@@ -116,10 +112,9 @@ class AdditionalUserInfo extends BaseObject
 
     /**
      * @param $phone
-     * @return mixed
      */
     public function setPhone($phone)
     {
-        return $this->phone = $phone;
+        $this->phone = $phone;
     }
 }

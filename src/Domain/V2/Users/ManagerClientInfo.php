@@ -30,11 +30,10 @@ class ManagerClientInfo extends BaseObject
 
     /**
      * @param $accessType
-     * @return mixed
      */
     public function setAccessType($accessType)
     {
-        return $this->accessType = $accessType;
+        $this->accessType = $accessType;
     }
 
     /**
@@ -47,10 +46,9 @@ class ManagerClientInfo extends BaseObject
 
     /**
      * @param $id
-     * @return mixed
      */
     public function setId($id)
     {
-        return $this->id = $id;
+        $this->id = $id;
     }
 }
