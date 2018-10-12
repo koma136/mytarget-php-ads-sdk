@@ -3,6 +3,7 @@
   "description": "API bindings for MyTarget",
   "type": "library",
   "require": {
+    "yiisoft/yii2": "~2.0.6",
     "doctrine/instantiator": "^1",
     "psr/http-message": "~1",
     "guzzlehttp/psr7": "^1",
@@ -19,5 +20,17 @@
   "autoload": {
     "psr-4": {"Koma136\\MyTarget\\": "src/", "tests\\Koma136\\MyTarget\\": "tests/"},
     "files": ["src/functions.php"]
-  }
+  },
+  "config": {
+    "process-timeout": 1800,
+    "fxp-asset": {
+      "enabled": false
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ]
 }
