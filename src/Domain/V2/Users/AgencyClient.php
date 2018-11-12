@@ -16,14 +16,14 @@ class AgencyClient extends BaseObject
     private $access_type;
 
     /**
-     * @var string
-     * @Field(type="string")
+     * @var UserStatus
+     * @Field(type="Koma136\MyTarget\Domain\V2\Enum\UserStatus")
      */
     private $status;
 
     /**
      * @var UserClient
-     * @Field(name="UserClient", type="Koma136\MyTarget\Domain\V2\Users\UserClient")
+     * @Field(type="Koma136\MyTarget\Domain\V2\Users\UserClient")
      */
     private $user;
 
