@@ -43,20 +43,23 @@ class ClientOperator
         }, $json);
     }
 
+
     /**
      * @param AdditionalUserInfo $userInfo
+     * @param null $email
      * @param Context|null $context
-     *
      * @return AgencyClient
      */
-    public function create(AdditionalUserInfo $userInfo, Context $context = null)
+    public function create(AdditionalUserInfo $userInfo, $email=null, Context $context = null)
     {
         $context = Context::withLimitBy($context, self::LIMIT_CREATE);
         $rawUserInfo = $this->mapper->snapshot($userInfo);
-        $body = ["additional_info" => $rawUserInfo];
+        $body = ["user"=>[
+                    "additional_info" => $rawUserInfo,
+                    "additional_emails" => [$email],
+                ]];
 
         $json = $this->client->post("/api/v2/clients.json", null, $body, $context);
-
         return $this->mapper->hydrateNew(AgencyClient::class, $json);
     }
 }

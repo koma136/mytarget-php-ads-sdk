@@ -3,6 +3,7 @@
 namespace Koma136\MyTarget\Domain\V2\Users;
 
 use Koma136\MyTarget\Mapper\Annotation\Field;
+
 use Yii\base\BaseObject;
 
 

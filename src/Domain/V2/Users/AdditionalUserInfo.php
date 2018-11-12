@@ -9,7 +9,7 @@ use Yii\base\BaseObject;
 class AdditionalUserInfo extends BaseObject
 {
     /**
-     * @var string
+     * @var address
      * @Field(type="string")
      */
     private $address;
