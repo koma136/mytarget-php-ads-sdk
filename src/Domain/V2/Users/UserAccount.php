@@ -2,7 +2,7 @@
 
 namespace Koma136\MyTarget\Domain\V2\Users;
 
-
+use Koma136\MyTarget\Mapper\Annotation\Field;
 use yii\base\BaseObject;
 
 class UserAccount extends BaseObject
