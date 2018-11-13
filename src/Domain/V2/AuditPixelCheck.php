@@ -8,12 +8,12 @@ class AuditPixelCheck
 {
     /**
      * @var string
-     * @Fiald (name="audit_pixel", type="string")
+     * @Field (name="audit_pixel", type="string")
      */
     private $auditPixel;
     /**
      * @var bool
-     * @Fiald (name="used", type="bool")
+     * @Field (name="used", type="bool")
      */
     private $used;
 

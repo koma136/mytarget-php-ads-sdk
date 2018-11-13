@@ -8,19 +8,19 @@ class AuditPixel
 {
     /**
      * @var string
-     * @Fiald (name="audit_pixel", type="string")
+     * @Field (name="audit_pixel", type="string")
      */
     private $auditPixel;
 
     /**
      * @var string
-     * @Fiald (name="role", type="string")
+     * @Field (name="role", type="string")
      */
     private $role;
 
     /**
      * @var string[]
-     * @Fiald (name="roles", type="dict<string>")
+     * @Field (name="roles", type="dict<string>")
      */
     private $roles;
 
