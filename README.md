@@ -11,3 +11,8 @@ composer require koma136/my-target-sdk
 ```
 
 fork dsl/my-target-sdk
+
+Для Yii 2 в index.php пишем:
+
+$autoloader = require(__DIR__ . '/../../vendor/autoload.php');
+\Doctrine\Common\Annotations\AnnotationRegistry::registerLoader([$autoloader, 'loadClass']);
