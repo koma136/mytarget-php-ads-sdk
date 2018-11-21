@@ -61,6 +61,13 @@ class Segment
     private $users;
 
     /**
+     * @return Segment
+     */
+    public static function create(){
+        return new self();
+    }
+
+    /**
      * @return int[]
      */
     public function getCampaignIds(): array

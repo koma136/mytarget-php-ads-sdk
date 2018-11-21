@@ -4,6 +4,7 @@ namespace Koma136\MyTarget\Domain\V2\Audience;
 
 use Koma136\MyTarget\Mapper\Annotation\Field;
 use Koma136\MyTarget\Domain\V2\Enum\SegmentObjectType;
+use Koma136\MyTarget\Domain\V2\Audience\SegmentParam;
 
 class SegmentRelation
 {
@@ -23,10 +24,17 @@ class SegmentRelation
      */
     private $objectType;
     /**
-     * @var object
-     * @Field (name="params", type="object")
+     * @var SegmentParam
+     * @Field (name="params", type="Koma136\MyTarget\Domain\V2\Audience\SegmentParam")
      */
     private $params;
+
+    /**
+     * @return SegmentRelation
+     */
+    public static function create(){
+      return new self();
+    }
 
     /**
      * @return int
@@ -83,22 +91,23 @@ class SegmentRelation
     }
 
     /**
-     * @return object
+     * @return \Koma136\MyTarget\Domain\V2\Audience\SegmentParam
      */
-    public function getParams(): object
+    public function getParams(): \Koma136\MyTarget\Domain\V2\Audience\SegmentParam
     {
         return $this->params;
     }
 
     /**
-     * @param object $params
+     * @param \Koma136\MyTarget\Domain\V2\Audience\SegmentParam $params
      * @return $this
      */
-    public function setParams(object $params)
+    public function setParams(\Koma136\MyTarget\Domain\V2\Audience\SegmentParam $params)
     {
         $this->params = $params;
         return $this;
     }
+
 
 
 
