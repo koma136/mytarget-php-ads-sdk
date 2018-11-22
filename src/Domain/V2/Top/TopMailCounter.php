@@ -58,7 +58,7 @@ class TopMailCounter
     /**
      * @return TopMailCounter
      */
-    public function create()
+    public static function create()
     {
         return new self();
     }

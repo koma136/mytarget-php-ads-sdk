@@ -18,8 +18,8 @@ class TopMailResponse
      */
     private $error;
     /**
-     * @var integer
-     * @Field (name="id", type="integer")
+     * @var int
+     * @Field (name="id", type="int")
      */
     private $id;
     /**
@@ -29,9 +29,9 @@ class TopMailResponse
     private $result;
 
     /**
-     * @return string
+     * @return string|null
      */
-    public function getError(): string
+    public function getError()
     {
         return $this->error;
     }
@@ -49,7 +49,7 @@ class TopMailResponse
     /**
      * @return int
      */
-    public function getId(): int
+    public function getId()
     {
         return $this->id;
     }
@@ -67,7 +67,7 @@ class TopMailResponse
     /**
      * @return string
      */
-    public function getResult(): string
+    public function getResult()
     {
         return $this->result;
     }

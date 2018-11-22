@@ -16,4 +16,20 @@ class YesNo extends AbstractEnum
 
     const NO = 'no';
 
+    /**
+     * @return YesNo
+     */
+    public static function yes()
+    {
+        return YesNo::fromValue(self::YES);
+    }
+
+    /**
+     * @return YesNo
+     */
+    public static function no()
+    {
+        return YesNo::fromValue(self::NO);
+    }
+
 }
