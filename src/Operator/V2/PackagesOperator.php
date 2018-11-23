@@ -35,7 +35,7 @@ class PackagesOperator
     public function all(Context $context = null)
     {
         $context = Context::withLimitBy($context, self::LIMIT_FIND);
-        $json = $this->client->get('/api/v2/packages.json', $query, $context);
+        $json = $this->client->get('/api/v2/packages.json', null, $context);
         return array_map(function ($json) {
             return $this->mapper->hydrateNew(Package::class, $json);
         }, $json['items']);
@@ -47,7 +47,7 @@ class PackagesOperator
     public function allActive(Context $context = null)
     {
         $context = Context::withLimitBy($context, self::LIMIT_FIND);
-        $json = $this->client->get('/api/v2/packages.json', $query, $context);
+        $json = $this->client->get('/api/v2/packages.json', null, $context);
         return array_filter(array_map(function ($json) {
             if($json['status'] == Status::ACTIVE)
             return $this->mapper->hydrateNew(Package::class, $json);
