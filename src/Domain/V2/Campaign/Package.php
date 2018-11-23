@@ -91,7 +91,7 @@ class Package extends BaseObject
     private $updated;
     /**
      * @var string[]
-     * @Field(name="url_types", type="array<string>")
+     * @Field(name="url_types", type="dict<string>")
      */
     private $urlTypes;
 
