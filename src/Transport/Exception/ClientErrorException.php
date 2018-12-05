@@ -16,13 +16,15 @@ class ClientErrorException extends RequestException
      */
     public static function fromResponse(RequestInterface $req, ResponseInterface $res)
     {
-        $message = "MyTarget: Client Error {$res->getStatusCode()} {$res->getReasonPhrase()} {$res->getBody()}";
+        $message = "MyTarget: Client Error {$res->getStatusCode()} {$res->getReasonPhrase()}";
 
         switch ($res->getStatusCode()) {
             case 404:
                 return new NotFoundException($message, $req, $res);
             case 403:
                 return new AccessForbiddenException($message, $req, $res);
+            case 400:
+                return new BadRequestException($message, $req, $res);
             default:
                 return new ClientErrorException($message, $req, $res);
         }

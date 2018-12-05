@@ -28,20 +28,12 @@ class ContentVariant
     private $width;
 
     /**
-     * @return int
+     * @return ContentVariant
      */
-    public function getWidth(): int
+    public static function create()
     {
-        return $this->width;
+        return new self();
     }
-    /**
-     * @param int $width
-     */
-    public function setWidth(int $width): void
-    {
-        $this->width = $width;
-    }
-
     /**
      * @return int
      */
@@ -52,26 +44,12 @@ class ContentVariant
 
     /**
      * @param int $height
+     * @return $this
      */
-    public function setHeight(int $height): void
+    public function setHeight(int $height)
     {
         $this->height = $height;
-    }
-
-    /**
-     * @return string
-     */
-    public function getUrl(): string
-    {
-        return $this->url;
-    }
-
-    /**
-     * @param string $url
-     */
-    public function setUrl(string $url): void
-    {
-        $this->url = $url;
+        return $this;
     }
 
     /**
@@ -84,9 +62,49 @@ class ContentVariant
 
     /**
      * @param int $size
+     * @return $this
      */
-    public function setSize(int $size): void
+    public function setSize(int $size)
     {
         $this->size = $size;
+        return $this;
     }
+
+    /**
+     * @return string
+     */
+    public function getUrl(): string
+    {
+        return $this->url;
+    }
+
+    /**
+     * @param string $url
+     * @return $this
+     */
+    public function setUrl(string $url)
+    {
+        $this->url = $url;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getWidth(): int
+    {
+        return $this->width;
+    }
+
+    /**
+     * @param int $width
+     * @return $this
+     */
+    public function setWidth(int $width)
+    {
+        $this->width = $width;
+        return $this;
+    }
+
+
 }

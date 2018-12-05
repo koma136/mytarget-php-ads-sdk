@@ -115,133 +115,29 @@ class Banner
     private $videoParams;
 
     /**
-     * @return int
+     * @return Banner
      */
-    public function getId()
-    {
-        return $this->id;
-    }
-
-    /**
-     * @param int $id
-     */
-    public function setId($id)
-    {
-        $this->id = $id;
-    }
-
-    /**
-     * @return Status
-     */
-    public function getStatus()
-    {
-        return $this->status;
-    }
-
-    /**
-     * @param Status $status
-     */
-    public function setStatus($status)
-    {
-        $this->status = $status;
-    }
-
-
-    /**
-     * @return \DateTimeImmutable
-     */
-    public function getCreated()
-    {
-        return $this->created;
-    }
-
-    /**
-     * @param \DateTimeInterface $created
-     */
-    public function setCreated(\DateTimeInterface $created)
-    {
-        $this->created = f\date_immutable($created);
-    }
-
-    /**
-     * @return \DateTimeImmutable
-     */
-    public function getUpdated()
-    {
-        return $this->updated;
-    }
-
-    /**
-     * @param \DateTimeInterface $updated
-     */
-    public function setUpdated(\DateTimeInterface $updated)
-    {
-        $this->updated = f\date_immutable($updated);
-    }
-
-    /**
-     * @return ModerationStatus
-     */
-    public function getModerationStatus()
-    {
-        return $this->moderationStatus;
-    }
-
-    /**
-     * @param ModerationStatus $moderationStatus
-     */
-    public function setModerationStatus($moderationStatus)
-    {
-        $this->moderationStatus = $moderationStatus;
-    }
-
-    /**
-     * @return Products
-     */
-    public function getProducts()
-    {
-        return $this->products;
-    }
-
-    /**
-     * @param Products $products
-     */
-    public function setProducts($products)
-    {
-        $this->products = $products;
+    public static function create(){
+        return new self();
     }
 
 
     /**
      * @return string
      */
-    public function getDeeplink()
-    {
-        return $this->deeplink;
-    }
-
-    /**
-     * @param string $deeplink
-     */
-    public function setDeeplink($deeplink)
-    {
-        $this->deeplink = $deeplink;
-    }
-
-    /**
-     * @return string
-     */
-    public function getCallToAction()
+    public function getCallToAction(): string
     {
         return $this->callToAction;
     }
 
     /**
      * @param string $callToAction
+     * @return $this
      */
-    public function setCallToAction($callToAction)
+    public function setCallToAction(string $callToAction)
     {
         $this->callToAction = $callToAction;
+        return $this;
     }
 
     /**
@@ -254,10 +150,12 @@ class Banner
 
     /**
      * @param int $campaignId
+     * @return $this
      */
-    public function setCampaignId(int $campaignId): void
+    public function setCampaignId(int $campaignId)
     {
         $this->campaignId = $campaignId;
+        return $this;
     }
 
     /**
@@ -270,10 +168,48 @@ class Banner
 
     /**
      * @param \Koma136\MyTarget\Domain\V2\Banner\BannerContent $content
+     * @return $this
      */
-    public function setContent(\Koma136\MyTarget\Domain\V2\Banner\BannerContent $content): void
+    public function setContent(\Koma136\MyTarget\Domain\V2\Banner\BannerContent $content)
     {
         $this->content = $content;
+        return $this;
+    }
+
+    /**
+     * @return \DateTimeImmutable
+     */
+    public function getCreated(): \DateTimeImmutable
+    {
+        return $this->created;
+    }
+
+    /**
+     * @param \DateTimeImmutable $created
+     * @return $this
+     */
+    public function setCreated(\DateTimeImmutable $created)
+    {
+        $this->created = $created;
+        return $this;
+    }
+
+    /**
+     * @return string
+     */
+    public function getDeeplink(): string
+    {
+        return $this->deeplink;
+    }
+
+    /**
+     * @param string $deeplink
+     * @return $this
+     */
+    public function setDeeplink(string $deeplink)
+    {
+        $this->deeplink = $deeplink;
+        return $this;
     }
 
     /**
@@ -286,10 +222,30 @@ class Banner
 
     /**
      * @param string $delivery
+     * @return $this
      */
-    public function setDelivery(string $delivery): void
+    public function setDelivery(string $delivery)
     {
         $this->delivery = $delivery;
+        return $this;
+    }
+
+    /**
+     * @return int
+     */
+    public function getId(): int
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param int $id
+     * @return $this
+     */
+    public function setId(int $id)
+    {
+        $this->id = $id;
+        return $this;
     }
 
     /**
@@ -302,10 +258,12 @@ class Banner
 
     /**
      * @param Issues[] $issues
+     * @return $this
      */
-    public function setIssues(array $issues): void
+    public function setIssues(array $issues)
     {
         $this->issues = $issues;
+        return $this;
     }
 
     /**
@@ -318,10 +276,66 @@ class Banner
 
     /**
      * @param ModerationReason[] $moderationReasons
+     * @return $this
      */
-    public function setModerationReasons(array $moderationReasons): void
+    public function setModerationReasons(array $moderationReasons)
     {
         $this->moderationReasons = $moderationReasons;
+        return $this;
+    }
+
+    /**
+     * @return ModerationStatus
+     */
+    public function getModerationStatus(): ModerationStatus
+    {
+        return $this->moderationStatus;
+    }
+
+    /**
+     * @param ModerationStatus $moderationStatus
+     * @return $this
+     */
+    public function setModerationStatus(ModerationStatus $moderationStatus)
+    {
+        $this->moderationStatus = $moderationStatus;
+        return $this;
+    }
+
+    /**
+     * @return \Koma136\MyTarget\Domain\V2\Banner\Products
+     */
+    public function getProducts(): \Koma136\MyTarget\Domain\V2\Banner\Products
+    {
+        return $this->products;
+    }
+
+    /**
+     * @param \Koma136\MyTarget\Domain\V2\Banner\Products $products
+     * @return $this
+     */
+    public function setProducts(\Koma136\MyTarget\Domain\V2\Banner\Products $products)
+    {
+        $this->products = $products;
+        return $this;
+    }
+
+    /**
+     * @return Status
+     */
+    public function getStatus(): Status
+    {
+        return $this->status;
+    }
+
+    /**
+     * @param Status $status
+     * @return $this
+     */
+    public function setStatus(Status $status)
+    {
+        $this->status = $status;
+        return $this;
     }
 
     /**
@@ -334,10 +348,30 @@ class Banner
 
     /**
      * @param Textblock[] $textblocks
+     * @return $this
      */
-    public function setTextblocks(array $textblocks): void
+    public function setTextblocks(array $textblocks)
     {
         $this->textblocks = $textblocks;
+        return $this;
+    }
+
+    /**
+     * @return \DateTimeImmutable
+     */
+    public function getUpdated(): \DateTimeImmutable
+    {
+        return $this->updated;
+    }
+
+    /**
+     * @param \DateTimeImmutable $updated
+     * @return $this
+     */
+    public function setUpdated(\DateTimeImmutable $updated)
+    {
+        $this->updated = $updated;
+        return $this;
     }
 
     /**
@@ -350,26 +384,12 @@ class Banner
 
     /**
      * @param \Koma136\MyTarget\Domain\V2\Banner\Urls $urls
+     * @return $this
      */
-    public function setUrls(\Koma136\MyTarget\Domain\V2\Banner\Urls $urls): void
+    public function setUrls(\Koma136\MyTarget\Domain\V2\Banner\Urls $urls)
     {
         $this->urls = $urls;
-    }
-
-    /**
-     * @return VideoParams
-     */
-    public function getVideoParams(): VideoParams
-    {
-        return $this->videoParams;
-    }
-
-    /**
-     * @param VideoParams $videoParams
-     */
-    public function setVideoParams(VideoParams $videoParams): void
-    {
-        $this->videoParams = $videoParams;
+        return $this;
     }
 
     /**
@@ -382,10 +402,31 @@ class Banner
 
     /**
      * @param bool $userCanRequestRemoderation
+     * @return $this
      */
-    public function setUserCanRequestRemoderation(bool $userCanRequestRemoderation): void
+    public function setUserCanRequestRemoderation(bool $userCanRequestRemoderation)
     {
         $this->userCanRequestRemoderation = $userCanRequestRemoderation;
+        return $this;
     }
+
+    /**
+     * @return VideoParams
+     */
+    public function getVideoParams(): VideoParams
+    {
+        return $this->videoParams;
+    }
+
+    /**
+     * @param VideoParams $videoParams
+     * @return $this
+     */
+    public function setVideoParams(VideoParams $videoParams)
+    {
+        $this->videoParams = $videoParams;
+        return $this;
+    }
+
 
 }

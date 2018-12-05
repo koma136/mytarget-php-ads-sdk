@@ -11,6 +11,7 @@ use Koma136\MyTarget\Operator\V2\Fields\CampaignFields;
 use Koma136\MyTarget\Client;
 use Koma136\MyTarget\Context;
 use Koma136\MyTarget as f;
+use GuzzleHttp\Psr7 as psr;
 
 class CampaignOperator
 {

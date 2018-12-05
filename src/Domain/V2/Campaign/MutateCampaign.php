@@ -2,6 +2,7 @@
 
 namespace Koma136\MyTarget\Domain\V2\Campaign;
 
+use Koma136\MyTarget\Domain\V2\Banner\BannerCampaign;
 use Koma136\MyTarget\Domain\V2\Enum\AutobiddingMode;
 use Koma136\MyTarget\Domain\V2\Enum\Mixing;
 use Koma136\MyTarget\Domain\V2\Enum\Status;
@@ -113,7 +114,7 @@ class MutateCampaign
 
     /**
      * @var CampaignTargeting
-     * @Field(name="targetings", type="Koma136\MyTarget\Domain\V1\Targeting\CampaignTargeting")
+     * @Field(name="targetings", type="Koma136\MyTarget\Domain\V2\Targeting\CampaignTargeting")
      */
     private $targetings;
 
@@ -134,6 +135,13 @@ class MutateCampaign
      * @Field(name="utm", type="string")
      */
     private $utm;
+
+    /**
+     * @var BannerCampaign[]
+     * @Field (name="banners", type="array<Koma136\MyTarget\Domain\V2\Banner\BannerCampaign>")
+     */
+    private $banners;
+
 
     /**
      * @return MutateCampaign
@@ -520,5 +528,22 @@ class MutateCampaign
         return $this;
     }
 
+    /**
+     * @return BannerCampaign[]
+     */
+    public function getBanners(): array
+    {
+        return $this->banners;
+    }
+
+    /**
+     * @param BannerCampaign[] $banners
+     * @return $this
+     */
+    public function setBanners(array $banners)
+    {
+        $this->banners = $banners;
+        return $this;
+    }
 
 }

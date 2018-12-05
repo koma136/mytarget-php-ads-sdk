@@ -2,6 +2,7 @@
 
 namespace Koma136\MyTarget\Domain\V2\Banner;
 
+use Koma136\MyTarget\Domain\V2\Enum\ContentType;
 use Koma136\MyTarget\Mapper\Annotation\Field;
 use Koma136\MyTarget\Domain\V2\Banner\ContentVariant;
 
@@ -13,8 +14,8 @@ class BannerContent
      */
     private $id;
     /**
-     * @var string
-     * @Field(name="type", type="string")
+     * @var ContentType
+     * @Field(name="type", type="Koma136\MyTarget\Domain\V2\Enum\ContentType")
      */
     private $type;
     /**
@@ -24,11 +25,11 @@ class BannerContent
     private $variants;
 
     /**
-     * @param int $id
+     * @return BannerContent
      */
-    public function setId(int $id): void
+    public static function create()
     {
-        $this->id = $id;
+        return new self();
     }
 
     /**
@@ -40,19 +41,31 @@ class BannerContent
     }
 
     /**
-     * @return string
+     * @param int $id
+     * @return $this
      */
-    public function getType(): string
+    public function setId(int $id)
+    {
+        $this->id = $id;
+        return $this;
+    }
+
+    /**
+     * @return ContentType
+     */
+    public function getType(): ContentType
     {
         return $this->type;
     }
 
     /**
-     * @param string $type
+     * @param ContentType $type
+     * @return $this
      */
-    public function setType(string $type): void
+    public function setType(ContentType $type)
     {
         $this->type = $type;
+        return $this;
     }
 
     /**
@@ -65,9 +78,11 @@ class BannerContent
 
     /**
      * @param \Koma136\MyTarget\Domain\V2\Banner\ContentVariant $variants
+     * @return $this
      */
-    public function setVariants(\Koma136\MyTarget\Domain\V2\Banner\ContentVariant $variants): void
+    public function setVariants(\Koma136\MyTarget\Domain\V2\Banner\ContentVariant $variants)
     {
         $this->variants = $variants;
+        return $this;
     }
 }

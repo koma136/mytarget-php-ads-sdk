@@ -18,6 +18,14 @@ class Textblock
     private $title;
 
     /**
+     * @return Textblock
+     */
+   public static  function create()
+   {
+       return new self();
+   }
+
+    /**
      * @return string
      */
     public function getText(): string
@@ -27,10 +35,12 @@ class Textblock
 
     /**
      * @param string $text
+     * @return $this
      */
-    public function setText(string $text): void
+    public function setText(string $text)
     {
         $this->text = $text;
+        return $this;
     }
 
     /**
@@ -43,9 +53,14 @@ class Textblock
 
     /**
      * @param string $title
+     * @return $this
      */
-    public function setTitle(string $title): void
+    public function setTitle(string $title)
     {
         $this->title = $title;
+        return $this;
     }
+
+
+
 }

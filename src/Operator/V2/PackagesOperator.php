@@ -42,7 +42,7 @@ class PackagesOperator
     }
  /**
      * @param Context|null $context
-     * @return Package[]
+     * @return array
      */
     public function allActive(Context $context = null)
     {
@@ -50,7 +50,7 @@ class PackagesOperator
         $json = $this->client->get('/api/v2/packages.json', null, $context);
         return array_filter(array_map(function ($json) {
             if($json['status'] == Status::ACTIVE)
-            return $this->mapper->hydrateNew(Package::class, $json);
+            return $json;
         }, $json['items']));
     }
 

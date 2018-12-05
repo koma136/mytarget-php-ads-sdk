@@ -15,6 +15,9 @@ use Koma136\MyTarget as f;
  */
 class SegmentsOperator
 {
+    const LIMIT_CREATE = "segments-create";
+    const LIMIT_EDIT = "segments-edit";
+    const LIMIT_FIND = "segments-find";
     /**
      * @var Client
      */
@@ -59,7 +62,7 @@ class SegmentsOperator
      */
     public function update($id, Segment $segment, Context $context = null)
     {
-        $context = Context::withLimitBy($context, self::LIMIT_CREATE);
+        $context = Context::withLimitBy($context, self::LIMIT_EDIT);
         $rawSegment = $this->mapper->snapshot($segment);
 
         $json = $this->client->post(sprintf("/api/v2/remarketing/segments/%d.json", $id), null, $rawSegment, $context);

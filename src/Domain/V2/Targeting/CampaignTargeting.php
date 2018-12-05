@@ -4,596 +4,120 @@ namespace Koma136\MyTarget\Domain\V2\Targeting;
 
 use Koma136\MyTarget\Domain\V2\Enum;
 use Koma136\MyTarget\Mapper\Annotation\Field;
-use Koma136\MyTarget\Domain\V2\Enum\MobilePrefix;
-use Koma136\MyTarget\Domain\V2\Enum\MobileType;
-use Koma136\MyTarget\Domain\V2\Enum\Sex;
-use Koma136\MyTarget\Domain\V2\Targeting\Pad\Pad;
-use Koma136\MyTarget\Domain\V2\Enum\Employment;
+use Koma136\MyTarget\Domain\V2\Targeting\AgeTargeting;
+use Koma136\MyTarget\Domain\V2\Targeting\BirthdayTargeting;
+
 
 class CampaignTargeting
 {
-
-
-
-
-
-
-
-
-
-
-
-/**-----------------------------------------------------**/
-
     /**
-     * @var Pad[]
-     * @Field(name="pads", type="array<Koma136\MyTarget\Domain\V1\Targeting\Pad\Pad>")
-     */
-    private $pads;
-
-    /**
-     * @var RemarketingTargeting[]
-     * @Field(name="remarketing", type="array<Koma136\MyTarget\Domain\V1\Targeting\RemarketingTargeting>")
-     */
-    private $remarketing;
-
-    /**
-     * @var int[]
-     * @Field(name="age", type="array<int>")
+     * @var AgeTargeting
+     * @Field (name="age", type="Koma136\MyTarget\Domain\V2\Targeting\AgeTargeting")
      */
     private $age;
-
     /**
-     * @var int[]
-     * @Field(name="regions", type="array<int>")
-     */
-    private $regions;
-
-    /**
-     * @var Sex
-     * @Field(name="sex", type="Koma136\MyTarget\Domain\V1\Enum\Sex")
-     */
-    private $sex;
-
-    /**
-     * @var Employment[]
-     * @Field(type="array<Koma136\MyTarget\Domain\V1\Enum\Employment>")
-     */
-    private $employment;
-
-    /**
-     * @var Enum\PersonalIncome[]
-     * @Field(name="personal_income", type="array<Koma136\MyTarget\Domain\V1\Enum\PersonalIncome>")
-     */
-    private $personalIncome;
-
-    /**
-     * @var Enum\MaritalStatus[]
-     * @Field(name="marital_status", type="array<Koma136\MyTarget\Domain\V1\Enum\MaritalStatus>")
-     */
-    private $maritalStatus;
-
-    /**
-     * @var Enum\TvType[]
-     * @Field(name="tv_viewer", type="array<Koma136\MyTarget\Domain\V1\Enum\TvType>")
-     */
-    private $tvViewer;
-
-    /**
-     * @var int[]
-     * @Field(type="array<int>")
-     */
-    private $hours;
-
-    /**
-     * @var Fulltime
-     * @Field(name="fulltime", type="Koma136\MyTarget\Domain\V1\Targeting\Fulltime")
-     */
-    private $fulltime;
-
-    /**
-     * @var Enum\Education[]
-     * @Field(name="f_education", type="array<Koma136\MyTarget\Domain\V1\Enum\TvType>")
-     */
-    private $education;
-
-    /**
-     * @var string[]
-     * @Field(name="salary", type="array<string>")
-     */
-    private $salary;
-
-    /**
-     * @var string[]
-     * @Field(name="profession", type="array<string>")
-     */
-    private $profession;
-
-    /**
-     * @var Language
-     * @Field(name="language", type="Koma136\MyTarget\Domain\V1\Targeting\Language")
-     */
-    private $language;
-
-    /**
-     * @var Birthday
-     * @Field(name="birthday", type="Koma136\MyTarget\Domain\V1\Targeting\Birthday")
-     */
-    private $birthday;
-
-    /**
-     * @var array
-     * @Field(name="user_geo", type="dict")
-     */
-    private $userGeo;
-
-    /**
-     * @var LocalGeo
-     * @Field(name="local_geo", type="Koma136\MyTarget\Domain\V1\Targeting\LocalGeo")
-     */
-    private $localGeo;
-
-    /**
-     * @var AppRecommendation
-     * @Field(name="app_recommendation", type="Koma136\MyTarget\Domain\V1\Targeting\AppRecommendation")
+     * @var int
+     * @Field (name="app_recommendation", type="int")
      */
     private $appRecommendation;
-
     /**
-     * @var MobileType[]
-     * @Field(name="mobile_types", type="array<Koma136\MyTarget\Domain\V1\Enum\MobileType>")
+     * @var BirthdayTargeting
+     * @Field (name="birthday", type="Koma136\MyTarget\Domain\V2\Targeting\BirthdayTargeting")
      */
-    private $mobileTypes;
-
+    private $birthday;
     /**
-     * @var MobilePrefix[]
-     * @Field(name="mobile_prefix", type="array<Koma136\MyTarget\Domain\V1\Enum\MobilePrefix>")
+     * @var
+     * @Field (name="browser", type="")
      */
-    private $mobilePrefix;
-
+    private $browser;
     /**
-     * @var int[]
-     * @Field(name="mobile_operating_systems", type="array<int>")
+     * @var
+     * @Field (name="fulltime", type="")
      */
-    private $mobileOperatingSystems;
-
+    private $fulltime;
     /**
-     * @var int[]
-     * @Field(name="mobile_operators", type="array<int>")
+     * @var
+     * @Field (name="group_members", type="")
      */
-    private $mobileOperators;
-
+    private $group_members;
     /**
-     * @var int[]
-     * @Field(name="mobile_vendors", type="array<int>")
+     * @var
+     * @Field (name="group_recommendation", type="")
      */
-    private $mobileVendors;
-
+    private $group_recommendation;
     /**
-     * @var mixed
-     * @Field(name="mobile_apps", type="mixed")
-     */
-    private $mobileApps;
-
-    /**
-     * @var int[]
-     * @Field(name="interests", type="array<int>")
+     * @var
+     * @Field (name="interests", type="")
      */
     private $interests;
-
     /**
-     * @return Pad[]
+     * @var
+     * @Field (name="interests_soc_dem", type="")
      */
-    public function getPads()
-    {
-        return $this->pads;
-    }
-
+    private $interests_soc_dem;
     /**
-     * @param Pad[] $pads
+     * @var
+     * @Field (name="interests_stable", type="")
      */
-    public function setPads($pads)
-    {
-        $this->pads = $pads;
-    }
-
+    private $interests_stable;
     /**
-     * @return RemarketingTargeting[]
+     * @var
+     * @Field (name="local_geo", type="")
      */
-    public function getRemarketing()
-    {
-        return $this->remarketing;
-    }
-
+    private $local_geo;
     /**
-     * @param RemarketingTargeting[] $remarketing
+     * @var
+     * @Field (name="mobile_apps", type="")
      */
-    public function setRemarketing($remarketing)
-    {
-        $this->remarketing = $remarketing;
-    }
-
+    private $mobile_apps;
     /**
-     * @return int[]
+     * @var
+     * @Field (name="mobile_operation_systems", type="")
      */
-    public function getAge()
-    {
-        return $this->age;
-    }
-
+    private $mobile_operation_systems;
     /**
-     * @param int[] $age
+     * @var
+     * @Field (name="mobile_operators", type="")
      */
-    public function setAge($age)
-    {
-        $this->age = $age;
-    }
-
+    private $mobile_operators;
     /**
-     * @return int[]
+     * @var
+     * @Field (name="mobile_prefix", type="")
      */
-    public function getRegions()
-    {
-        return $this->regions;
-    }
-
+    private $mobile_prefix;
     /**
-     * @param int[] $regions
+     * @var
+     * @Field (name="mobile_types", type="")
      */
-    public function setRegions($regions)
-    {
-        $this->regions = $regions;
-    }
-
+    private $mobile_types;
     /**
-     * @return Sex
+     * @var
+     * @Field (name="mobile_vendors", type="")
      */
-    public function getSex()
-    {
-        return $this->sex;
-    }
-
+    private $mobile_vendors;
     /**
-     * @param Sex $sex
+     * @var
+     * @Field (name="pad_category", type="")
      */
-    public function setSex($sex)
-    {
-        $this->sex = $sex;
-    }
-
+    private $pad_category;
     /**
-     * @return Fulltime
+     * @var
+     * @Field (name="pads", type="")
      */
-    public function getFulltime()
-    {
-        return $this->fulltime;
-    }
-
+    private $pads;
     /**
-     * @param Fulltime $fulltime
+     * @var
+     * @Field (name="regions", type="")
      */
-    public function setFulltime($fulltime)
-    {
-        $this->fulltime = $fulltime;
-    }
-
+    private $regions;
     /**
-     * @return Enum\Education[]
+     * @var
+     * @Field (name="segments", type="")
      */
-    public function getEducation()
-    {
-        return $this->education;
-    }
-
+    private $segments;
     /**
-     * @param Enum\Education[] $education
+     * @var
+     * @Field (name="sex", type="")
      */
-    public function setEducation($education)
-    {
-        $this->education = $education;
-    }
-
-    /**
-     * @return string[]
-     */
-    public function getSalary()
-    {
-        return $this->salary;
-    }
-
-    /**
-     * @param string[] $salary
-     */
-    public function setSalary($salary)
-    {
-        $this->salary = $salary;
-    }
-
-    /**
-     * @return string
-     */
-    public function getProfession()
-    {
-        return $this->profession;
-    }
-
-    /**
-     * @param string $profession
-     */
-    public function setProfession($profession)
-    {
-        $this->profession = $profession;
-    }
-
-    /**
-     * @return Language
-     */
-    public function getLanguage()
-    {
-        return $this->language;
-    }
-
-    /**
-     * @param Language $language
-     */
-    public function setLanguage($language)
-    {
-        $this->language = $language;
-    }
-
-    /**
-     * @return Birthday
-     */
-    public function getBirthday()
-    {
-        return $this->birthday;
-    }
-
-    /**
-     * @param Birthday $birthday
-     */
-    public function setBirthday($birthday)
-    {
-        $this->birthday = $birthday;
-    }
-
-    /**
-     * @return array
-     */
-    public function getUserGeo()
-    {
-        return $this->userGeo;
-    }
-
-    /**
-     * @param array $userGeo
-     */
-    public function setUserGeo($userGeo)
-    {
-        $this->userGeo = $userGeo;
-    }
-
-    /**
-     * @return LocalGeo
-     */
-    public function getLocalGeo()
-    {
-        return $this->localGeo;
-    }
-
-    /**
-     * @param LocalGeo $localGeo
-     */
-    public function setLocalGeo($localGeo)
-    {
-        $this->localGeo = $localGeo;
-    }
-
-    /**
-     * @return AppRecommendation
-     */
-    public function getAppRecommendation()
-    {
-        return $this->appRecommendation;
-    }
-
-    /**
-     * @param AppRecommendation $appRecommendation
-     */
-    public function setAppRecommendation($appRecommendation)
-    {
-        $this->appRecommendation = $appRecommendation;
-    }
-
-    /**
-     * @return Enum\MobileType[]
-     */
-    public function getMobileTypes()
-    {
-        return $this->mobileTypes;
-    }
-
-    /**
-     * @param Enum\MobileType[] $mobileTypes
-     */
-    public function setMobileTypes($mobileTypes)
-    {
-        $this->mobileTypes = $mobileTypes;
-    }
-
-    /**
-     * @return Enum\MobilePrefix[]
-     */
-    public function getMobilePrefix()
-    {
-        return $this->mobilePrefix;
-    }
-
-    /**
-     * @param Enum\MobilePrefix[] $mobilePrefix
-     */
-    public function setMobilePrefix($mobilePrefix)
-    {
-        $this->mobilePrefix = $mobilePrefix;
-    }
-
-    /**
-     * @return int[]
-     */
-    public function getMobileOperatingSystems()
-    {
-        return $this->mobileOperatingSystems;
-    }
-
-    /**
-     * @param int[] $mobileOperatingSystems
-     */
-    public function setMobileOperatingSystems($mobileOperatingSystems)
-    {
-        $this->mobileOperatingSystems = $mobileOperatingSystems;
-    }
-
-    /**
-     * @return int[]
-     */
-    public function getMobileOperators()
-    {
-        return $this->mobileOperators;
-    }
-
-    /**
-     * @param int[] $mobileOperators
-     */
-    public function setMobileOperators($mobileOperators)
-    {
-        $this->mobileOperators = $mobileOperators;
-    }
-
-    /**
-     * @return int[]
-     */
-    public function getMobileVendors()
-    {
-        return $this->mobileVendors;
-    }
-
-    /**
-     * @param int[] $mobileVendors
-     */
-    public function setMobileVendors($mobileVendors)
-    {
-        $this->mobileVendors = $mobileVendors;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getMobileApps()
-    {
-        return $this->mobileApps;
-    }
-
-    /**
-     * @param mixed $mobileApps
-     */
-    public function setMobileApps($mobileApps)
-    {
-        $this->mobileApps = $mobileApps;
-    }
-
-    /**
-     * @return int[]
-     */
-    public function getInterests()
-    {
-        return $this->interests;
-    }
-
-    /**
-     * @param int[] $interests
-     */
-    public function setInterests($interests)
-    {
-        $this->interests = $interests;
-    }
-
-    /**
-     * @return Enum\Employment[]
-     */
-    public function getEmployment()
-    {
-        return $this->employment;
-    }
-
-    /**
-     * @param Enum\Employment[] $employment
-     */
-    public function setEmployment($employment)
-    {
-        $this->employment = $employment;
-    }
-
-    /**
-     * @return Enum\PersonalIncome[]
-     */
-    public function getPersonalIncome()
-    {
-        return $this->personalIncome;
-    }
-
-    /**
-     * @param Enum\PersonalIncome[] $personalIncome
-     */
-    public function setPersonalIncome($personalIncome)
-    {
-        $this->personalIncome = $personalIncome;
-    }
-
-    /**
-     * @return Enum\MaritalStatus[]
-     */
-    public function getMaritalStatus()
-    {
-        return $this->maritalStatus;
-    }
-
-    /**
-     * @param Enum\MaritalStatus[] $maritalStatus
-     */
-    public function setMaritalStatus($maritalStatus)
-    {
-        $this->maritalStatus = $maritalStatus;
-    }
-
-    /**
-     * @return Enum\TvType[]
-     */
-    public function getTvViewer()
-    {
-        return $this->tvViewer;
-    }
-
-    /**
-     * @param Enum\TvType[] $tvViewer
-     */
-    public function setTvViewer($tvViewer)
-    {
-        $this->tvViewer = $tvViewer;
-    }
-
-    /**
-     * @return int[]
-     */
-    public function getHours()
-    {
-        return $this->hours;
-    }
-
-    /**
-     * @param int[] $hours
-     */
-    public function setHours($hours)
-    {
-        $this->hours = $hours;
-    }
+    private $sex;
 }

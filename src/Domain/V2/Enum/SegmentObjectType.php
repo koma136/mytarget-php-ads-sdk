@@ -28,4 +28,7 @@ class SegmentObjectType extends AbstractEnum
         const SEGMENT='segment';
         const REMARKETING_PAYER='remarketing_payer';
 
+
+
+
 }

@@ -32,6 +32,13 @@ class Urls
      */
     private $urlTypes;
 
+    /**
+     * @return Urls
+     */
+    public static function create()
+    {
+        return new self();
+    }
 
     /**
      * @return int
@@ -43,10 +50,12 @@ class Urls
 
     /**
      * @param int $id
+     * @return $this
      */
-    public function setId(int $id): void
+    public function setId(int $id)
     {
         $this->id = $id;
+        return $this;
     }
 
     /**
@@ -59,10 +68,12 @@ class Urls
 
     /**
      * @param string $url
+     * @return $this
      */
-    public function setUrl(string $url): void
+    public function setUrl(string $url)
     {
         $this->url = $url;
+        return $this;
     }
 
     /**
@@ -75,10 +86,12 @@ class Urls
 
     /**
      * @param string $urlObjectId
+     * @return $this
      */
-    public function setUrlObjectId(string $urlObjectId): void
+    public function setUrlObjectId(string $urlObjectId)
     {
         $this->urlObjectId = $urlObjectId;
+        return $this;
     }
 
     /**
@@ -91,10 +104,12 @@ class Urls
 
     /**
      * @param string $urlObjectType
+     * @return $this
      */
-    public function setUrlObjectType(string $urlObjectType): void
+    public function setUrlObjectType(string $urlObjectType)
     {
         $this->urlObjectType = $urlObjectType;
+        return $this;
     }
 
     /**
@@ -107,9 +122,11 @@ class Urls
 
     /**
      * @param string $urlTypes
+     * @return $this
      */
-    public function setUrlTypes(string $urlTypes): void
+    public function setUrlTypes(string $urlTypes)
     {
         $this->urlTypes = $urlTypes;
+        return $this;
     }
 }
