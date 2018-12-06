@@ -20,3 +20,5 @@ $autoloader = require(__DIR__ . '/../../vendor/autoload.php');
 
 Добавлен TopMailOperator для создания счетчиков top.mail.ru, нужно при организации ремаркетинга.
 Основанно на супер документации )) https://help.mail.ru/top/API/main
+
+### Пролучение ключа
